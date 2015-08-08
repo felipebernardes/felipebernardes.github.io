@@ -86,12 +86,69 @@ header {
             background-color: rgba(0,0,0,.7);
             font-weight: 600;
         }
-    
     }
 }
 
 .job-section {
+    background-image: url('/img/job_bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.3);
+    }
+    
+    div {
+        position: relative;
+        top: 15%;
+        width: 80%;
+        background-color: #000;
+        background-color: rgba(0,0,0,.9);
+        color: #FFF;
+        $padding-left: 2rem;
+        padding: .7rem;
+        
+        .job-title {
+            padding-left: $padding-left;
+            font-size: 2rem;
+        }
+        
+        .job-subtitle {
+            padding-left: $padding-left;
+            font-size: 1rem;
+        }
+        
+        .job-details {
+            display: none;
+        }
+        
+        .actions {
+            width: 100%;
+            margin: 1rem auto 0 auto;
+            display: flex;
 
+            a {
+                margin: auto;
+                $size: .8rem;
+                font-size: $size;
+                letter-spacing: $size * 0.2;
+                color: #FFF;
+                text-align: center;
+                width: 40%;
+                padding: .6rem .5rem;
+                background-color: rgba(220,220,0,.7);
+                font-weight: 600;
+            }
+        }        
+    }
 }
 
 .contact-section {
