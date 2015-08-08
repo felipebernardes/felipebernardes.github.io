@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+a, a:visited, a:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+
 @mixin display-flex {
     display: -webkit-box; 
     display: -moz-box;     
@@ -14,6 +19,7 @@
 
 html {
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 
 header,
@@ -152,7 +158,7 @@ header {
 }
 
 .contact-section {
-//    background-image: url('/img/job_bg1.png');
+    background-image: url('/img/contact_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +166,7 @@ header {
     color: #FFF;
     display: flex;
     flex-flow: column;
+    z-index: 1;
     
     &:before {
         position: absolute;
@@ -183,6 +190,8 @@ header {
     p {
         font-size: 1.1rem;
         margin: auto;
+        font-weight: 600;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.8);
     }
     
     .actions {
@@ -190,16 +199,18 @@ header {
     
         a {
             margin: 1rem auto;
+            font-weight: 600;
             display: block;
             font-size: 1.4rem;
             width: auto;
             text-align: center;
             padding: 1rem;
-            background-color: rgba(0,80,160,.3);
-            transition: background .2s ease;
+            background-color: rgba(0,90,160,.5);
+            transition: background .2s linear;
             
             &:hover {
-                background-color: rgba(0,80,160,.6);
+                background-color: rgba(0,90,160,.7);
+                transition: background .2s linear;
             }
         }
     }
@@ -211,6 +222,11 @@ footer {
     padding: 1.4rem 0 0 0;
     text-align: center;
     overflow: hidden;
+    
+    .signature {
+        font-family: 'Rock Salt', cursive;
+        font-size: 1.4rem;
+    }
     
     .social-links {
         margin: 1.4rem auto 0 auto;
@@ -236,7 +252,7 @@ footer {
                     position: absolute;
                     background: #FFF;
                     content: '';
-                    top: 120%;
+                    top: 110%;
                     left: 0;
                     width: 100%;
                     height: 200%;

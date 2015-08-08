@@ -371,8 +371,13 @@ th {
   box-sizing: border-box;
   margin: 0; }
 
+a, a:visited, a:focus {
+  color: #FFF;
+  text-decoration: none; }
+
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
 
 header,
 section {
@@ -476,6 +481,7 @@ header {
         font-weight: 600; }
 
 .contact-section {
+  background-image: url("/img/contact_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -483,6 +489,7 @@ header {
   color: #FFF;
   display: flex;
   flex-flow: column;
+  z-index: 1;
   padding: 1rem; }
   .contact-section:before {
     position: absolute;
@@ -499,20 +506,24 @@ header {
     margin: auto; }
   .contact-section p {
     font-size: 1.1rem;
-    margin: auto; }
+    margin: auto;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
   .contact-section .actions {
     margin: auto; }
     .contact-section .actions a {
       margin: 1rem auto;
+      font-weight: 600;
       display: block;
       font-size: 1.4rem;
       width: auto;
       text-align: center;
       padding: 1rem;
-      background-color: rgba(0, 80, 160, 0.3);
-      transition: background 0.2s ease; }
+      background-color: rgba(0, 90, 160, 0.5);
+      transition: background 0.2s linear; }
       .contact-section .actions a:hover {
-        background-color: rgba(0, 80, 160, 0.6); }
+        background-color: rgba(0, 90, 160, 0.7);
+        transition: background 0.2s linear; }
 
 footer {
   background-color: #333;
@@ -520,6 +531,9 @@ footer {
   padding: 1.4rem 0 0 0;
   text-align: center;
   overflow: hidden; }
+  footer .signature {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.4rem; }
   footer .social-links {
     margin: 1.4rem auto 0 auto;
     display: flex;
@@ -541,7 +555,7 @@ footer {
           position: absolute;
           background: #FFF;
           content: '';
-          top: 120%;
+          top: 110%;
           left: 0;
           width: 100%;
           height: 200%;
