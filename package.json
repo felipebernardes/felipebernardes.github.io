@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "Time to build my portfolio!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/felipebernardes/portfolio.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/felipebernardes/portfolio/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4"
+  }
+}
