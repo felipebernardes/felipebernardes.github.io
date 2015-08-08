@@ -152,7 +152,57 @@ header {
 }
 
 .contact-section {
-
+//    background-image: url('/img/job_bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #FFF;
+    display: flex;
+    flex-flow: column;
+    
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,50,150,.3);
+        z-index: -1;
+    }
+    
+    padding: 1rem;
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        margin: auto;
+    }
+    
+    .actions {
+        margin: auto;
+    
+        a {
+            margin: 1rem auto;
+            display: block;
+            font-size: 1.4rem;
+            width: auto;
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0,80,160,.3);
+            transition: background .2s ease;
+            
+            &:hover {
+                background-color: rgba(0,80,160,.6);
+            }
+        }
+    }
 }
 
 footer {

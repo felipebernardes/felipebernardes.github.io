@@ -474,3 +474,42 @@ header {
         padding: 0.6rem 0.5rem;
         background-color: rgba(220, 220, 0, 0.7);
         font-weight: 600; }
+
+.contact-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color: #FFF;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem; }
+  .contact-section:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 50, 150, 0.3);
+    z-index: -1; }
+  .contact-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto; }
+  .contact-section p {
+    font-size: 1.1rem;
+    margin: auto; }
+  .contact-section .actions {
+    margin: auto; }
+    .contact-section .actions a {
+      margin: 1rem auto;
+      display: block;
+      font-size: 1.4rem;
+      width: auto;
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 80, 160, 0.3);
+      transition: background 0.2s ease; }
+      .contact-section .actions a:hover {
+        background-color: rgba(0, 80, 160, 0.6); }
