@@ -513,7 +513,7 @@ header {
       background-color: #f7931e; }
       .job-section:nth-of-type(3) div .actions a:hover {
         background-color: #c26c07; }
-  .job-section div {
+  .job-section .card {
     position: relative;
     top: 15%;
     width: 80%;
@@ -521,24 +521,24 @@ header {
     background-color: rgba(0, 0, 0, 0.9);
     color: #FFF;
     padding: .7rem; }
-    .job-section div .job-title {
+    .job-section .card .job-title {
       padding-left: 2rem; }
-    .job-section div .job-subtitle {
+    .job-section .card .job-subtitle {
       padding-left: 2rem; }
-    .job-section div .job-details {
+    .job-section .card .job-details {
       display: none; }
-    .job-section div .actions {
+    .job-section .card .actions {
       width: 100%;
       margin: 1rem auto 0 auto;
       display: flex; }
-      .job-section div .actions a {
+      .job-section .card .actions a {
         margin: auto;
         color: #FFF;
         text-align: center;
         width: 40%;
         padding: 0.6rem 0.5rem;
         transition: background 0.2s linear; }
-        .job-section div .actions a:hover {
+        .job-section .card .actions a:hover {
           transition: background 0.2s linear; }
 
 .contact-section {
