@@ -375,14 +375,62 @@ a, a:visited, a:focus {
   color: #FFF;
   text-decoration: none; }
 
+header,
+section {
+  height: 100vh; }
+
 html {
   font-size: 16px;
   font-family: 'Lato', sans-serif; }
 
-/* general */
-header,
-section {
-  height: 100vh; }
+header .title h1 {
+  font-size: 9vw;
+  letter-spacing: 2.7vw;
+  line-height: 9vw;
+  font-weight: 600; }
+
+header .title p {
+  max-width: 96%;
+  font-size: 6vw;
+  font-weight: 600; }
+
+header .about {
+  font-size: 1.1rem;
+  line-height: 1.21rem; }
+
+header a {
+  font-size: 0.8rem;
+  letter-spacing: 0.16rem;
+  font-weight: 600; }
+
+.job-section .job-title {
+  font-size: 2rem; }
+
+.job-section .job-subtitle {
+  font-size: 1.4rem; }
+
+.job-section a {
+  font-size: 0.8rem;
+  letter-spacing: 0.16rem;
+  font-weight: 600; }
+
+.contact-section h2 {
+  font-size: 2rem; }
+
+.contact-section p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+
+.contact-section a {
+  font-size: 1.4rem; }
+
+footer .signature {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.4rem; }
+
+footer a {
+  font-size: 2rem; }
 
 header {
   display: -webkit-box;
@@ -400,23 +448,15 @@ header {
     width: 70vw;
     margin: 0 0 0 5vw; }
     header .title h1 {
-      font-size: 9vw;
-      letter-spacing: 2.7vw;
-      line-height: 9vw;
-      font-weight: 600;
       margin: 0;
       color: #000;
       color: rgba(0, 0, 0, 0.7); }
     header .title p {
-      max-width: 96%;
-      font-size: 6vw;
-      font-weight: 600;
       color: #555;
       color: rgba(50, 50, 50, 0.7); }
       header .title p span {
         display: none; }
   header .about {
-    font-size: 1.1rem;
     color: #555;
     color: rgba(80, 80, 80, 0.9);
     width: 70vw;
@@ -427,15 +467,12 @@ header {
     display: flex; }
     header .actions a {
       margin: auto;
-      font-size: 0.8rem;
-      letter-spacing: 0.16rem;
       color: #FFF;
       text-align: center;
       width: 40%;
       padding: 1.2rem 1rem;
       background-color: rgba(0, 0, 0, 0.7);
-      transition: background 0.2s linear;
-      font-weight: 600; }
+      transition: background 0.2s linear; }
       header .actions a:hover {
         background-color: rgba(0, 10, 0, 0.9);
         transition: background 0.2s linear; }
@@ -452,7 +489,12 @@ header {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%); }
   .job-section:nth-of-type(1) {
     background-image: url("/img/job_bg1.png"); }
     .job-section:nth-of-type(1) div .actions a {
@@ -480,11 +522,9 @@ header {
     color: #FFF;
     padding: .7rem; }
     .job-section div .job-title {
-      padding-left: 2rem;
-      font-size: 2rem; }
+      padding-left: 2rem; }
     .job-section div .job-subtitle {
-      padding-left: 2rem;
-      font-size: 1rem; }
+      padding-left: 2rem; }
     .job-section div .job-details {
       display: none; }
     .job-section div .actions {
@@ -493,14 +533,11 @@ header {
       display: flex; }
       .job-section div .actions a {
         margin: auto;
-        font-size: 0.8rem;
-        letter-spacing: 0.16rem;
         color: #FFF;
         text-align: center;
         width: 40%;
         padding: 0.6rem 0.5rem;
-        transition: background 0.2s linear;
-        font-weight: 600; }
+        transition: background 0.2s linear; }
         .job-section div .actions a:hover {
           transition: background 0.2s linear; }
 
@@ -525,21 +562,16 @@ header {
     background-color: rgba(0, 50, 150, 0.3);
     z-index: -1; }
   .contact-section h2 {
-    font-size: 2rem;
     text-align: center;
     margin: auto; }
   .contact-section p {
-    font-size: 1.1rem;
-    margin: auto;
-    font-weight: 600;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+    margin: auto; }
   .contact-section .actions {
     margin: auto; }
     .contact-section .actions a {
       margin: 1rem auto;
       font-weight: 600;
       display: block;
-      font-size: 1.4rem;
       width: auto;
       text-align: center;
       padding: 1rem;
@@ -555,9 +587,6 @@ footer {
   padding: 1.4rem 0 0 0;
   text-align: center;
   overflow: hidden; }
-  footer .signature {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1.4rem; }
   footer .social-links {
     margin: 1.4rem auto 0 auto;
     display: flex;
@@ -578,10 +607,10 @@ footer {
         color: #333; }
       footer .social-links li a {
         position: relative;
-        font-size: 2rem;
         transition: all 0.2s ease;
         z-index: 1;
-        padding: 0.5rem 0.4rem 0 0.4rem; }
+        padding: 0.5rem 0.4rem 0 0.4rem;
+        transition: color 0.2s ease; }
         footer .social-links li a:before {
           z-index: -1;
           position: absolute;
@@ -593,6 +622,7 @@ footer {
           height: 200%;
           transition: all 0.2s ease; }
         footer .social-links li a:hover {
-          color: #333; }
+          color: #333;
+          transition: color 0.2s ease; }
           footer .social-links li a:hover:before {
             top: 0; }

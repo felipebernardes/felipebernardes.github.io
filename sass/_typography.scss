@@ -3,8 +3,83 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-/* general */
-header,
-section {
-    height: 100vh;
+header {
+    
+    .title {
+        h1 {
+            $size: 9vw;
+            font-size: $size;
+            letter-spacing: $size * 0.3;
+            line-height: $size;
+            font-weight: 600;
+        }
+        
+        p {
+            max-width: 96%;
+            $size: 6vw;
+            font-size: $size;
+            font-weight: 600;
+        }
+    }
+    
+    .about {
+        $size: 1.1rem;
+        font-size: $size;
+        line-height: $size * 1.1;
+    }
+    
+    a {
+        $size: .8rem;
+        font-size: $size;
+        letter-spacing: $size * 0.2;
+        font-weight: 600;
+    }
+}
+
+.job-section {
+    .job-title {
+        font-size: 2rem;
+    }
+    
+    .job-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .job-details {
+    
+    }
+    
+    a {
+        $size: .8rem;
+        font-size: $size;
+        letter-spacing: $size * 0.2;
+        font-weight: 600;
+    }
+}
+
+.contact-section {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.8);    
+    }
+    
+    a {
+        font-size: 1.4rem;
+    }
+}
+
+footer {
+    .signature {
+        font-family: 'Rock Salt', cursive;
+        font-size: 1.4rem;
+    }
+    
+    a {
+        font-size: 2rem;
+    }
 }
