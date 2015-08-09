@@ -7,18 +7,46 @@ header {
     
     .title {
         h1 {
-            $size: 9vw;
-            font-size: $size;
-            letter-spacing: $size * 0.3;
-            line-height: $size;
+            $m-size: 9vw;
+            font-size: $m-size;
+            letter-spacing: $m-size * 0.18;
+            line-height: $m-size;
             font-weight: 600;
+            
+            @include tablet {
+                $t-size: 11vw;
+                font-size: $t-size;
+                letter-spacing: $t-size * 0.18;
+                line-height: $t-size;
+                font-weight: 400;
+            }
+            
+            @include desktop {
+                $d-size: 5.55vw;
+                font-size: $d-size;
+                letter-spacing: $d-size * 0.18;
+                line-height: $d-size;                
+            }
         }
         
         p {
-            max-width: 96%;
+            font-family: 'Tienne', serif;
             $size: 6vw;
             font-size: $size;
-            font-weight: 600;
+            font-weight: 700;
+            
+            @include tablet {
+                max-width: 80vw;
+                $t-size: 5vw;
+                font-size: $t-size;
+                line-height: $t-size;
+            }
+            
+            @include desktop {
+                $d-size: 2.67vw;
+                font-size: $d-size;
+                line-height: $d-size;            
+            }            
         }
     }
     
@@ -26,6 +54,18 @@ header {
         $size: 1.1rem;
         font-size: $size;
         line-height: $size * 1.1;
+        
+        @include tablet {
+            $t-size: 3.6vw;
+            font-size: $t-size;
+            line-height: $t-size;
+        }
+
+        @include desktop {
+            $d-size: 2vw;
+            font-size: $d-size;
+            line-height: $d-size;            
+        }              
     }
     
     a {
@@ -33,6 +73,22 @@ header {
         font-size: $size;
         letter-spacing: $size * 0.2;
         font-weight: 600;
+        padding: ($size*1.5) 0;
+        
+        
+        @include tablet {
+            $t-size: 2.8vw;
+            font-size: $t-size;
+            letter-spacing: $t-size * 0.2;
+            padding: ($t-size * 1.5) 0;
+        }
+
+        @include desktop {
+            $d-size: 2vw;
+            font-size: $d-size;
+            letter-spacing: $d-size * 0.2; 
+            padding: ($d-size * 1.5) 0;
+        } 
     }
 }
 
