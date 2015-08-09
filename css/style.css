@@ -379,6 +379,7 @@ html {
   font-size: 16px;
   font-family: 'Lato', sans-serif; }
 
+/* general */
 header,
 section {
   height: 100vh; }
@@ -433,7 +434,11 @@ header {
       width: 40%;
       padding: 1.2rem 1rem;
       background-color: rgba(0, 0, 0, 0.7);
+      transition: background 0.2s linear;
       font-weight: 600; }
+      header .actions a:hover {
+        background-color: rgba(0, 10, 0, 0.9);
+        transition: background 0.2s linear; }
 
 .job-section {
   background-image: url("/img/job_bg1.png");
@@ -478,7 +483,11 @@ header {
         width: 40%;
         padding: 0.6rem 0.5rem;
         background-color: rgba(220, 220, 0, 0.7);
+        transition: background 0.2s linear;
         font-weight: 600; }
+        .job-section div .actions a:hover {
+          background-color: rgba(220, 220, 0, 0.5);
+          transition: background 0.2s linear; }
 
 .contact-section {
   background-image: url("/img/contact_bg.jpg");

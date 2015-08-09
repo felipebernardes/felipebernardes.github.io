@@ -1,0 +1,73 @@
+header {
+    @include display-flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+    background-image: url('/img/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 48vw top;
+    
+    .title {
+        width: 70vw;
+        margin: 0 0 0 5vw;
+        
+        h1 {
+            $size: 9vw;
+            font-size: $size;
+            letter-spacing: $size * 0.3;
+            line-height: $size;
+            font-weight: 600;
+            margin: 0;
+            color: #000;
+            color: rgba(0,0,0,0.7);
+        }
+
+        p {
+            max-width: 96%;
+            $size: 6vw;
+            font-size: $size;
+            font-weight: 600;
+            color: #555;
+            color: rgba(50,50,50,0.7);            
+            
+            span {
+                display: none;
+            }
+        }
+    }
+    
+    .about {
+        $size: 1.1rem;
+        font-size: $size;
+        color: #555;
+        color: rgba(80,80,80,0.9);
+        width: 70vw;
+        margin-left: 5vw;
+    }
+    
+    .actions {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        
+        a {
+            margin: auto;
+            $size: .8rem;
+            font-size: $size;
+            letter-spacing: $size * 0.2;
+            color: #FFF;
+            text-align: center;
+            width: 40%;
+            padding: 1.2rem 1rem;
+            background-color: rgba(0,0,0,.7);
+            transition: background .2s linear;
+            font-weight: 600;
+            
+            &:hover {
+                background-color: rgba(0,10,0,.9);
+                transition: background .2s linear;
+            }
+        }
+    }
+}

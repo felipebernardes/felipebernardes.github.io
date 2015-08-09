@@ -1,0 +1,58 @@
+.contact-section {
+    background-image: url('/img/contact_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #FFF;
+    display: flex;
+    flex-flow: column;
+    z-index: 1;
+    
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,50,150,.3);
+        z-index: -1;
+    }
+    
+    padding: 1rem;
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        margin: auto;
+        font-weight: 600;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    }
+    
+    .actions {
+        margin: auto;
+    
+        a {
+            margin: 1rem auto;
+            font-weight: 600;
+            display: block;
+            font-size: 1.4rem;
+            width: auto;
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0,90,160,.5);
+            transition: background .2s linear;
+            
+            &:hover {
+                background-color: rgba(0,90,160,.7);
+                transition: background .2s linear;
+            }
+        }
+    }
+}
