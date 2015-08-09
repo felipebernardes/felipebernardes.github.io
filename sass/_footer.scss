@@ -1,3 +1,9 @@
+$social-1: #bf72b8;
+$social-2: #000;
+$social-3: #007bb5;
+$social-4: #333;
+$social-list: ($social-1, $social-2, $social-3, $social-4);
+
 footer {
     background-color: #333;
     color: #FFF;
@@ -21,6 +27,16 @@ footer {
         li {
             height: 3rem;
             position: relative;
+            
+            @for $n from 1 through 4 {
+                &:hover {
+                    &:nth-of-type(#{$n}) {
+                        a { 
+                            color: nth($social-list, $n);
+                        }
+                    }
+                }
+            }            
         
             a {
                 position: relative;
@@ -32,9 +48,9 @@ footer {
                 &:before {
                     z-index: -1;
                     position: absolute;
-                    background: #FFF;
                     content: '';
                     top: 110%;
+                    background-color: #FFF;
                     left: 0;
                     width: 100%;
                     height: 200%;

@@ -568,6 +568,14 @@ footer {
     footer .social-links li {
       height: 3rem;
       position: relative; }
+      footer .social-links li:hover:nth-of-type(1) a {
+        color: #bf72b8; }
+      footer .social-links li:hover:nth-of-type(2) a {
+        color: #000; }
+      footer .social-links li:hover:nth-of-type(3) a {
+        color: #007bb5; }
+      footer .social-links li:hover:nth-of-type(4) a {
+        color: #333; }
       footer .social-links li a {
         position: relative;
         font-size: 2rem;
@@ -577,9 +585,9 @@ footer {
         footer .social-links li a:before {
           z-index: -1;
           position: absolute;
-          background: #FFF;
           content: '';
           top: 110%;
+          background-color: #FFF;
           left: 0;
           width: 100%;
           height: 200%;
