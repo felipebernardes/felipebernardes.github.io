@@ -9,6 +9,10 @@ $job-list: ($job-1, $job-2, $job-3);
     background-position: center;
     position: relative;
     
+    @include desktop {
+        background-attachment: fixed;
+    }
+    
     &:before {
         position: absolute;
         top: 0;
@@ -26,7 +30,7 @@ $job-list: ($job-1, $job-2, $job-3);
     
     @for $n from 1 through 3 {
         &:nth-of-type(#{$n}) {
-            background-image: url('/img/job_bg#{$n}.png');
+            background-image: url('../img/job_bg#{$n}.png');
             
             div .actions a { 
                 background-color: nth($job-list, $n);
@@ -45,15 +49,24 @@ $job-list: ($job-1, $job-2, $job-3);
         background-color: #000;
         background-color: rgba(0,0,0,.9);
         color: #FFF;
-        $padding-left: 2rem;
-        padding: .7rem;
+        $padding: 1rem;
+        padding: $padding 0 $padding $padding*3;
+        max-width: 400px;
+        
+        @include tablet {
+            width: 45%;
+        }
+        
+        @include desktop {
+            width: 35%;
+        }
         
         .job-title {
-            padding-left: $padding-left;
+            
         }
         
         .job-subtitle {
-            padding-left: $padding-left;
+           
         }
         
         .job-details {
@@ -66,12 +79,17 @@ $job-list: ($job-1, $job-2, $job-3);
             display: flex;            
 
             a {
-                margin: auto;
+                margin: auto 1rem auto 0;
                 color: #FFF;
                 text-align: center;
                 width: 40%;
+                max-width: 90px;
                 padding: .6rem .5rem;
-                transition: background .2s linear;         
+                transition: background .2s linear;
+                
+                @include tablet {
+                    width: 30%;
+                }
                 
                 &:hover {
                     transition: background .2s linear;

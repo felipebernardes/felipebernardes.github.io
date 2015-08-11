@@ -379,6 +379,9 @@ header,
 section {
   height: 100vh; }
 
+body {
+  position: relative; }
+
 html {
   font-size: 16px;
   font-family: 'Lato', sans-serif; }
@@ -546,6 +549,9 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   position: relative; }
+  @media (min-width: 1024px) {
+    .job-section {
+      background-attachment: fixed; } }
   .job-section:before {
     position: absolute;
     top: 0;
@@ -625,7 +631,8 @@ header {
   padding: 1rem; }
   @media (min-width: 1024px) {
     .contact-section {
-      background-attachment: fixed; } }
+      background-attachment: fixed;
+      flex-flow: row wrap; } }
   .contact-section:before {
     position: absolute;
     top: 0;
@@ -643,10 +650,50 @@ header {
   .contact-section h2 {
     text-align: center;
     margin: auto; }
+    @media (min-width: 768px) {
+      .contact-section h2 {
+        margin: 20vh auto 20vh auto; } }
+    @media (min-width: 1024px) {
+      .contact-section h2 {
+        margin: auto;
+        width: 100%; } }
   .contact-section p {
     margin: auto; }
+    @media (min-width: 768px) {
+      .contact-section p {
+        max-width: 60%;
+        margin: -5rem auto 5rem auto;
+        text-align: center; } }
+    @media (min-width: 1024px) {
+      .contact-section p {
+        text-align: left;
+        width: 40%;
+        margin: 0 0 auto auto; } }
   .contact-section .actions {
     margin: auto; }
+    @media (min-width: 768px) {
+      .contact-section .actions {
+        margin-top: 0;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        -moz-display: flex;
+        -ms-display: flexbox;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around; } }
+    @media (min-width: 1024px) {
+      .contact-section .actions {
+        width: 40%;
+        margin: 0 auto auto 0;
+        flex-flow: column;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        -ms-flex-flow: column; } }
     .contact-section .actions a {
       margin: 1rem auto;
       font-weight: 600;
@@ -659,13 +706,46 @@ header {
       .contact-section .actions a:hover {
         background-color: rgba(0, 160, 90, 0.7);
         transition: background 0.2s linear; }
+      @media (min-width: 768px) {
+        .contact-section .actions a {
+          width: 40%; } }
+      @media (min-width: 1024px) {
+        .contact-section .actions a {
+          margin: 0 auto 5vh auto;
+          width: 80%;
+          max-width: 300px; } }
 
 footer {
-  background-color: #333;
+  background-color: #222;
+  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #232526 10%, #414345 90%);
+  /* W3C */
   color: #FFF;
   padding: 1.4rem 0 0 0;
   text-align: center;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    footer {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 10%, rgba(50, 60, 50, 0.7) 90%);
+      /* Chrome 10+, Saf5.1+ */
+      background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 10%, rgba(50, 60, 50, 0.7) 90%);
+      /* FF3.6+ */
+      background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 10%, rgba(50, 60, 50, 0.7) 90%);
+      /* IE10 */
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 10%, rgba(50, 60, 50, 0.7) 90%);
+      /* W3C */ } }
   @media (min-width: 1024px) {
     footer {
       display: -webkit-box;
@@ -711,13 +791,13 @@ footer {
       position: relative;
       text-align: center; }
       footer .social-links li:nth-of-type(1) a:before {
-        background-color: #e5ade0; }
+        background-color: #f0caed; }
       footer .social-links li:hover:nth-of-type(1) a {
-        color: #e5ade0; }
+        color: #f0caed; }
       footer .social-links li:nth-of-type(2) a:before {
-        background-color: #000; }
+        background-color: #111; }
       footer .social-links li:hover:nth-of-type(2) a {
-        color: #000; }
+        color: #111; }
       footer .social-links li:nth-of-type(3) a:before {
         background-color: #007bb5; }
       footer .social-links li:hover:nth-of-type(3) a {
@@ -760,4 +840,4 @@ footer {
           transition: all 0.2s ease; }
           @media (min-width: 1024px) {
             footer .social-links li a:before {
-              top: 140%; } }
+              top: 135%; } }
