@@ -433,14 +433,14 @@ header a {
   padding: 1.2rem 0; }
   @media (min-width: 768px) {
     header a {
-      font-size: 2.8vw;
-      letter-spacing: 0.56vw;
-      padding: 4.2vw 0; } }
+      font-size: 2.4vw;
+      letter-spacing: 0.48vw;
+      padding: 3.6vw 0; } }
   @media (min-width: 1024px) {
     header a {
-      font-size: 2vw;
-      letter-spacing: 0.4vw;
-      padding: 3vw 0; } }
+      font-size: 1.6vw;
+      letter-spacing: 0.32vw;
+      padding: 2.4vw 0; } }
 
 .job-section .job-title {
   font-size: 2rem; }
@@ -452,6 +452,10 @@ header a {
   font-size: 0.8rem;
   letter-spacing: 0.16rem;
   font-weight: 600; }
+  .job-section a span {
+    position: relative;
+    top: 0.12rem;
+    margin-left: 0.16rem; }
 
 .contact-section h2 {
   font-size: 2rem; }
@@ -481,7 +485,7 @@ header {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  background-image: url("/img/header_bg.jpg");
+  background-image: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50vw top; }
@@ -523,12 +527,14 @@ header {
     @media (min-width: 1024px) {
       header .actions {
         width: 55%;
+        max-width: 940px;
         margin: 0 auto 0 5vw; } }
     header .actions a {
       margin: auto;
       color: #FFF;
       text-align: center;
       width: 40%;
+      max-width: 220px;
       background-color: rgba(0, 0, 0, 0.7);
       transition: background 0.2s linear; }
       header .actions a:hover {
@@ -554,19 +560,19 @@ header {
     background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%); }
   .job-section:nth-of-type(1) {
-    background-image: url("/img/job_bg1.png"); }
+    background-image: url("../img/job_bg1.png"); }
     .job-section:nth-of-type(1) div .actions a {
       background-color: #c7af36; }
       .job-section:nth-of-type(1) div .actions a:hover {
         background-color: #8b7a26; }
   .job-section:nth-of-type(2) {
-    background-image: url("/img/job_bg2.png"); }
+    background-image: url("../img/job_bg2.png"); }
     .job-section:nth-of-type(2) div .actions a {
       background-color: #ed1b2f; }
       .job-section:nth-of-type(2) div .actions a:hover {
         background-color: #ae0e1d; }
   .job-section:nth-of-type(3) {
-    background-image: url("/img/job_bg3.png"); }
+    background-image: url("../img/job_bg3.png"); }
     .job-section:nth-of-type(3) div .actions a {
       background-color: #f7931e; }
       .job-section:nth-of-type(3) div .actions a:hover {
@@ -578,11 +584,14 @@ header {
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.9);
     color: #FFF;
-    padding: .7rem; }
-    .job-section .card .job-title {
-      padding-left: 2rem; }
-    .job-section .card .job-subtitle {
-      padding-left: 2rem; }
+    padding: 1rem 0 1rem 3rem;
+    max-width: 400px; }
+    @media (min-width: 768px) {
+      .job-section .card {
+        width: 45%; } }
+    @media (min-width: 1024px) {
+      .job-section .card {
+        width: 35%; } }
     .job-section .card .job-details {
       display: none; }
     .job-section .card .actions {
@@ -590,17 +599,21 @@ header {
       margin: 1rem auto 0 auto;
       display: flex; }
       .job-section .card .actions a {
-        margin: auto;
+        margin: auto 1rem auto 0;
         color: #FFF;
         text-align: center;
         width: 40%;
+        max-width: 90px;
         padding: 0.6rem 0.5rem;
         transition: background 0.2s linear; }
+        @media (min-width: 768px) {
+          .job-section .card .actions a {
+            width: 30%; } }
         .job-section .card .actions a:hover {
           transition: background 0.2s linear; }
 
 .contact-section {
-  background-image: url("/img/contact_bg.jpg");
+  background-image: url("../img/contact_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -610,6 +623,9 @@ header {
   flex-flow: column;
   z-index: 1;
   padding: 1rem; }
+  @media (min-width: 1024px) {
+    .contact-section {
+      background-attachment: fixed; } }
   .contact-section:before {
     position: absolute;
     top: 0;
@@ -617,8 +633,13 @@ header {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 50, 150, 0.3);
-    z-index: -1; }
+    z-index: -1;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%); }
   .contact-section h2 {
     text-align: center;
     margin: auto; }
@@ -633,10 +654,10 @@ header {
       width: auto;
       text-align: center;
       padding: 1rem;
-      background-color: rgba(0, 90, 160, 0.5);
+      background-color: rgba(0, 160, 90, 0.5);
       transition: background 0.2s linear; }
       .contact-section .actions a:hover {
-        background-color: rgba(0, 90, 160, 0.7);
+        background-color: rgba(0, 160, 90, 0.7);
         transition: background 0.2s linear; }
 
 footer {
@@ -645,42 +666,98 @@ footer {
   padding: 1.4rem 0 0 0;
   text-align: center;
   overflow: hidden; }
+  @media (min-width: 1024px) {
+    footer {
+      display: -webkit-box;
+      display: -moz-box;
+      -moz-display: flex;
+      -ms-display: flexbox;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: 1.4rem 0; } }
+  @media (min-width: 1024px) {
+    footer .signature {
+      margin-left: 3vw; } }
   footer .social-links {
     margin: 1.4rem auto 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    -moz-display: flex;
+    -ms-display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row;
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     list-style: none;
     padding-left: 0; }
+    @media (min-width: 1024px) {
+      footer .social-links {
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        margin: auto 3vw auto auto;
+        width: 30vw; } }
     footer .social-links li {
       height: 3rem;
-      position: relative; }
+      position: relative;
+      text-align: center; }
+      footer .social-links li:nth-of-type(1) a:before {
+        background-color: #e5ade0; }
       footer .social-links li:hover:nth-of-type(1) a {
-        color: #bf72b8; }
+        color: #e5ade0; }
+      footer .social-links li:nth-of-type(2) a:before {
+        background-color: #000; }
       footer .social-links li:hover:nth-of-type(2) a {
         color: #000; }
+      footer .social-links li:nth-of-type(3) a:before {
+        background-color: #007bb5; }
       footer .social-links li:hover:nth-of-type(3) a {
         color: #007bb5; }
+      footer .social-links li:nth-of-type(4) a:before {
+        background-color: #333; }
       footer .social-links li:hover:nth-of-type(4) a {
         color: #333; }
+      footer .social-links li:last-of-type a:before {
+        background-color: #FFF; }
+      @media (min-width: 1024px) {
+        footer .social-links li {
+          margin: auto 1rem auto 0; }
+          footer .social-links li:last-child {
+            margin-right: 0; } }
+      footer .social-links li:hover a {
+        color: #333;
+        transition: all 0.2s ease; }
+        footer .social-links li:hover a:before {
+          top: 0;
+          background-color: #FFF;
+          transition: all 0.2s ease; }
       footer .social-links li a {
         position: relative;
         transition: all 0.2s ease;
         z-index: 1;
         padding: 0.5rem 0.4rem 0 0.4rem;
-        transition: color 0.2s ease; }
+        transition: all 0.2s ease; }
+        @media (min-width: 1024px) {
+          footer .social-links li a {
+            padding: 0.5rem 1rem; } }
         footer .social-links li a:before {
           z-index: -1;
           position: absolute;
           content: '';
           top: 110%;
-          background-color: #FFF;
           left: 0;
           width: 100%;
           height: 200%;
           transition: all 0.2s ease; }
-        footer .social-links li a:hover {
-          color: #333;
-          transition: color 0.2s ease; }
-          footer .social-links li a:hover:before {
-            top: 0; }
+          @media (min-width: 1024px) {
+            footer .social-links li a:before {
+              top: 140%; } }

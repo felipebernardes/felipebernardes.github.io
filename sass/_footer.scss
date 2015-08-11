@@ -1,4 +1,4 @@
-$social-1: #bf72b8;
+$social-1: #e5ade0;
 $social-2: #000;
 $social-3: #007bb5;
 $social-4: #333;
@@ -11,19 +11,40 @@ footer {
     text-align: center;
     overflow: hidden;
     
+    @include desktop {
+        @include display-flex;
+         padding: 1.4rem 0;
+    }
+    
+    .signature {
+        @include desktop {
+            margin-left: 3vw;
+        } 
+    }
+    
     .social-links {
         margin: 1.4rem auto 0 auto;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
+        @include display-flex;
+        @include flex-flow(row);
+        @include justify-content(space-around);
         list-style: none;
         padding-left: 0;
+        
+        @include desktop {
+            @include justify-content(flex-end);
+            margin: auto 3vw auto auto;
+            width: 30vw;
+        }
         
         li {
             height: 3rem;
             position: relative;
+            text-align: center;
             
             @for $n from 1 through 4 {
+                &:nth-of-type(#{$n}) a:before {
+                    background-color: nth($social-list, $n);
+                }                
                 &:hover {
                     &:nth-of-type(#{$n}) {
                         a { 
@@ -31,36 +52,58 @@ footer {
                         }
                     }
                 }
-            }            
+            }
+    
+            &:last-of-type a:before {
+                background-color: #FFF;
+            }
+        
+            @include desktop {
+                margin: auto 1rem auto 0;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        
+            &:hover {
+                a {
+                    color: #333;
+                    transition: all .2s ease;
+
+                    &:before {
+                        top: 0;
+                        background-color: #FFF;
+                        transition: all .2s ease;
+                    }
+                }
+            }        
         
             a {
                 position: relative;
                 transition: all .2s ease;
                 z-index: 1;
                 padding: .5rem .4rem 0 .4rem;
-                transition: color .2s ease;
+                transition: all .2s ease;
+                
+                @include desktop {
+                    padding: .5rem 1rem;
+                }
                 
                 &:before {
                     z-index: -1;
                     position: absolute;
                     content: '';
                     top: 110%;
-                    background-color: #FFF;
                     left: 0;
                     width: 100%;
                     height: 200%;
                     transition: all .2s ease;
-                }
-                
-                &:hover {
-                    color: #333;
-                    transition: color .2s ease;
                     
-                    &:before {
-                        top: 0;
+                    @include desktop {
+                        top: 140%;
                     }
                 }
-            
             }
         }
     }
