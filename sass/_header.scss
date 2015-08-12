@@ -2,14 +2,30 @@ header {
     @include display-flex;
     flex-flow: column;
     justify-content: space-around;
-    
-    background-image: url('/img/header_bg.jpg');
+    background-image: url('../img/header_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50vw top;
+    background-position: 40vw bottom;
+    
+    @include landscape {
+        background-position: 40vw top;
+    }
     
     @include desktop {
-        background-position: 40vw top;
+        background-position: right bottom;
+        background-size: auto 90%;
+        z-index: 1;
+        
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 40vw;
+            width: 60%;
+            height: 100%;
+            background: #75df7a;
+            content: '';
+            z-index: -1;
+        }
     }
     
     .title {
@@ -60,6 +76,7 @@ header {
         
         @include desktop {
             width: 55%;
+            max-width: 940px;
             margin: 0 auto 0 5vw;
         }
         
@@ -68,6 +85,7 @@ header {
             color: #FFF;
             text-align: center;
             width: 40%;
+            max-width: 220px;
             background-color: rgba(0,0,0,.7);
             transition: background .2s linear;
             
