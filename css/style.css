@@ -380,7 +380,8 @@ section {
   height: 100vh; }
 
 body {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 html {
   font-size: 16px;
@@ -491,10 +492,24 @@ header {
   background-image: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50vw top; }
-  @media (min-width: 1024px) {
+  background-position: 40vw bottom; }
+  @media screen and (orientation: landscape) {
     header {
       background-position: 40vw top; } }
+  @media (min-width: 1024px) {
+    header {
+      background-position: right bottom;
+      background-size: auto 90%;
+      z-index: 1; }
+      header:before {
+        position: absolute;
+        top: 0;
+        left: 40vw;
+        width: 60%;
+        height: 100%;
+        background: #75df7a;
+        content: '';
+        z-index: -1; } }
   header .title {
     width: 70vw;
     margin: 0 0 0 5vw; }
@@ -717,16 +732,6 @@ header {
 
 footer {
   background-color: #222;
-  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%);
-  /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(90deg, #232526 10%, #414345 90%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(90deg, #232526 10%, #414345 90%);
-  /* IE10 */
-  background: -o-linear-gradient(90deg, #232526 10%, #414345 90%);
-  /* Opera 11.10+ */
-  background: linear-gradient(90deg, #232526 10%, #414345 90%);
-  /* W3C */
   color: #FFF;
   padding: 1.4rem 0 0 0;
   text-align: center;
@@ -777,9 +782,11 @@ footer {
     -moz-justify-content: space-around;
     -ms-justify-content: space-around;
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    max-width: 480px; }
     @media (min-width: 1024px) {
       footer .social-links {
+        max-width: initial;
         justify-content: flex-end;
         -webkit-justify-content: flex-end;
         -moz-justify-content: flex-end;
@@ -791,9 +798,9 @@ footer {
       position: relative;
       text-align: center; }
       footer .social-links li:nth-of-type(1) a:before {
-        background-color: #f0caed; }
+        background-color: #b282ae; }
       footer .social-links li:hover:nth-of-type(1) a {
-        color: #f0caed; }
+        color: #b282ae; }
       footer .social-links li:nth-of-type(2) a:before {
         background-color: #111; }
       footer .social-links li:hover:nth-of-type(2) a {
