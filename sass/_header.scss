@@ -32,6 +32,10 @@ header {
         width: 70vw;
         margin: 0 0 0 5vw;
         
+        @include desktop {
+            margin: 0 0 0 10vw;
+        }
+        
         h1 {
             margin: 0;
             color: #000;
@@ -39,7 +43,7 @@ header {
         }
 
         p {
-            max-width: 96%;
+            margin-top: .5rem;
             color: #555;
             color: rgba(50,50,50,0.5);            
             
@@ -65,7 +69,8 @@ header {
         }
         
         @include desktop {
-            max-width: 45vw;
+            max-width: 30vw;
+            margin-left: 10vw;
         }
     }
     

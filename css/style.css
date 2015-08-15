@@ -394,15 +394,15 @@ header .title h1 {
   font-weight: 600; }
   @media (min-width: 768px) {
     header .title h1 {
-      font-size: 11vw;
-      letter-spacing: 1.98vw;
-      line-height: 11vw;
+      font-size: 12.2vw;
+      letter-spacing: 2.196vw;
+      line-height: 12.2vw;
       font-weight: 400; } }
   @media (min-width: 1024px) {
     header .title h1 {
-      font-size: 5.55vw;
-      letter-spacing: 0.999vw;
-      line-height: 5.55vw; } }
+      font-size: 4.45vw;
+      letter-spacing: 0.801vw;
+      line-height: 4.45vw; } }
 
 header .title p {
   font-family: 'Tienne', serif;
@@ -410,25 +410,25 @@ header .title p {
   font-weight: 700; }
   @media (min-width: 768px) {
     header .title p {
-      max-width: 80vw;
-      font-size: 5vw;
-      line-height: 5vw; } }
+      max-width: 52vw;
+      font-size: 4vw;
+      line-height: 4vw; } }
   @media (min-width: 1024px) {
     header .title p {
-      font-size: 2.67vw;
-      line-height: 2.67vw; } }
+      font-size: 2.18vw;
+      line-height: 2.18vw; } }
 
 header .about {
-  font-size: 1.1rem;
-  line-height: 1.21rem; }
+  font-size: 1rem;
+  line-height: 1.1rem; }
   @media (min-width: 768px) {
     header .about {
-      font-size: 3.6vw;
-      line-height: 3.6vw; } }
+      font-size: 3.2vw;
+      line-height: 3.2vw; } }
   @media (min-width: 1024px) {
     header .about {
-      font-size: 2vw;
-      line-height: 2vw; } }
+      font-size: 1.1rem;
+      line-height: 1.1rem; } }
 
 header a {
   font-size: 0.8rem;
@@ -437,14 +437,14 @@ header a {
   padding: 1.2rem 0; }
   @media (min-width: 768px) {
     header a {
-      font-size: 2.4vw;
-      letter-spacing: 0.48vw;
-      padding: 3.6vw 0; } }
+      font-size: 1.28rem;
+      letter-spacing: 0.256rem;
+      padding: 1.92rem 0; } }
   @media (min-width: 1024px) {
     header a {
-      font-size: 1.6vw;
-      letter-spacing: 0.32vw;
-      padding: 2.4vw 0; } }
+      font-size: 0.96rem;
+      letter-spacing: 0.192rem;
+      padding: 1.44rem 0; } }
 
 .job-section .job-title {
   font-size: 2rem; }
@@ -453,16 +453,16 @@ header a {
   font-size: 1.4rem; }
 
 .job-section a {
-  font-size: 0.8rem;
-  letter-spacing: 0.16rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.17rem;
   font-weight: 600; }
   .job-section a span {
     position: relative;
-    top: 0.12rem;
-    margin-left: 0.16rem; }
+    top: 0.1275rem;
+    margin-left: 0.17rem; }
 
 .contact-section h2 {
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 .contact-section p {
   font-size: 1.1rem;
@@ -470,11 +470,14 @@ header a {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
 
 .contact-section a {
-  font-size: 1.4rem; }
+  font-size: 1.2rem; }
 
 footer .signature {
   font-family: 'Rock Salt', cursive;
   font-size: 1.4rem; }
+  @media (min-width: 1024px) {
+    footer .signature {
+      font-size: 1.2rem; } }
 
 footer a {
   font-size: 2rem; }
@@ -513,12 +516,15 @@ header {
   header .title {
     width: 70vw;
     margin: 0 0 0 5vw; }
+    @media (min-width: 1024px) {
+      header .title {
+        margin: 0 0 0 10vw; } }
     header .title h1 {
       margin: 0;
       color: #000;
       color: rgba(0, 0, 0, 0.6); }
     header .title p {
-      max-width: 96%;
+      margin-top: .5rem;
       color: #555;
       color: rgba(50, 50, 50, 0.5); }
       header .title p span {
@@ -537,7 +543,8 @@ header {
         max-width: 60vw; } }
     @media (min-width: 1024px) {
       header .about {
-        max-width: 45vw; } }
+        max-width: 30vw;
+        margin-left: 10vw; } }
   header .actions {
     width: 100%;
     margin: 0 auto;
@@ -574,12 +581,12 @@ header {
     content: '';
     width: 100%;
     height: 100%;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%); }
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%); }
   .job-section:nth-of-type(1) {
     background-image: url("../img/job_bg1.png"); }
     .job-section:nth-of-type(1) div .actions a {
@@ -656,18 +663,18 @@ header {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%); }
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.35)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 100%); }
   .contact-section h2 {
     text-align: center;
     margin: auto; }
     @media (min-width: 768px) {
       .contact-section h2 {
-        margin: 20vh auto 20vh auto; } }
+        margin: 20vh auto 15vh auto; } }
     @media (min-width: 1024px) {
       .contact-section h2 {
         margin: auto;
@@ -682,7 +689,7 @@ header {
     @media (min-width: 1024px) {
       .contact-section p {
         text-align: left;
-        width: 40%;
+        width: 30%;
         margin: 0 0 auto auto; } }
   .contact-section .actions {
     margin: auto; }
@@ -703,7 +710,7 @@ header {
         -ms-justify-content: space-around; } }
     @media (min-width: 1024px) {
       .contact-section .actions {
-        width: 40%;
+        width: 35%;
         margin: 0 auto auto 0;
         flex-flow: column;
         -webkit-flex-flow: column;
