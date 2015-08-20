@@ -30,7 +30,7 @@ $job-list: ($job-1, $job-2, $job-3);
     
     @for $n from 1 through 3 {
         &:nth-of-type(#{$n}) {
-            background-image: url('../img/job_bg#{$n}.png');
+            background-image: url('../img/job_bg#{$n}.jpg');
             
             div .actions a { 
                 background-color: nth($job-list, $n);
@@ -50,8 +50,9 @@ $job-list: ($job-1, $job-2, $job-3);
         background-color: rgba(0,0,0,.9);
         color: #FFF;
         $padding: 1rem;
-        padding: $padding 0 $padding $padding*3;
+        padding: $padding $padding*1.5 $padding $padding*3;
         max-width: 400px;
+        transition: all 2s linear;
         
         @include tablet {
             width: 45%;
@@ -70,7 +71,18 @@ $job-list: ($job-1, $job-2, $job-3);
         }
         
         .job-details {
-            display: none;
+            height: 0;
+            margin: 1rem 0;
+            overflow: hidden;
+            transform: all 2s linear;
+            
+            p {
+                text-align: justify;
+                
+                &:first-letter {
+                    margin-left: 1rem;
+                }
+            }
         }          
         
         .actions {

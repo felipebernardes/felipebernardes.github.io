@@ -57,7 +57,7 @@
         
         @include desktop {
             text-align: left;
-            width: 30%;
+            width: 20%;
             margin: 0 0 auto auto;
         }
     }
@@ -73,7 +73,7 @@
         }
         
         @include desktop {
-            width: 35%;
+            width: 30%;
             margin: 0 auto auto 0;
             @include flex-flow(column);
         }

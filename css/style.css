@@ -383,6 +383,9 @@ body {
   position: relative;
   overflow-x: hidden; }
 
+.show {
+  height: auto !important; }
+
 html {
   font-size: 16px;
   font-family: 'Lato', sans-serif; }
@@ -451,6 +454,11 @@ header a {
 
 .job-section .job-subtitle {
   font-size: 1.4rem; }
+
+.job-section .job-details p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
 
 .job-section a {
   font-size: 0.85rem;
@@ -588,19 +596,19 @@ header {
     background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%); }
   .job-section:nth-of-type(1) {
-    background-image: url("../img/job_bg1.png"); }
+    background-image: url("../img/job_bg1.jpg"); }
     .job-section:nth-of-type(1) div .actions a {
       background-color: #c7af36; }
       .job-section:nth-of-type(1) div .actions a:hover {
         background-color: #8b7a26; }
   .job-section:nth-of-type(2) {
-    background-image: url("../img/job_bg2.png"); }
+    background-image: url("../img/job_bg2.jpg"); }
     .job-section:nth-of-type(2) div .actions a {
       background-color: #ed1b2f; }
       .job-section:nth-of-type(2) div .actions a:hover {
         background-color: #ae0e1d; }
   .job-section:nth-of-type(3) {
-    background-image: url("../img/job_bg3.png"); }
+    background-image: url("../img/job_bg3.jpg"); }
     .job-section:nth-of-type(3) div .actions a {
       background-color: #f7931e; }
       .job-section:nth-of-type(3) div .actions a:hover {
@@ -612,8 +620,9 @@ header {
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.9);
     color: #FFF;
-    padding: 1rem 0 1rem 3rem;
-    max-width: 400px; }
+    padding: 1rem 1.5rem 1rem 3rem;
+    max-width: 400px;
+    transition: all 2s linear; }
     @media (min-width: 768px) {
       .job-section .card {
         width: 45%; } }
@@ -621,7 +630,14 @@ header {
       .job-section .card {
         width: 35%; } }
     .job-section .card .job-details {
-      display: none; }
+      height: 0;
+      margin: 1rem 0;
+      overflow: hidden;
+      transform: all 2s linear; }
+      .job-section .card .job-details p {
+        text-align: justify; }
+        .job-section .card .job-details p:first-letter {
+          margin-left: 1rem; }
     .job-section .card .actions {
       width: 100%;
       margin: 1rem auto 0 auto;
@@ -689,7 +705,7 @@ header {
     @media (min-width: 1024px) {
       .contact-section p {
         text-align: left;
-        width: 30%;
+        width: 20%;
         margin: 0 0 auto auto; } }
   .contact-section .actions {
     margin: auto; }
@@ -710,7 +726,7 @@ header {
         -ms-justify-content: space-around; } }
     @media (min-width: 1024px) {
       .contact-section .actions {
-        width: 35%;
+        width: 30%;
         margin: 0 auto auto 0;
         flex-flow: column;
         -webkit-flex-flow: column;
