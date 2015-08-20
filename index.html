@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=device-width">
+
+        <meta property="og:image" content=""/>
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="320">
+
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
         
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Tienne:400,700|Lato:400,700|Rock+Salt' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/style.css">                           
     </head>
     <body>
         <header>
-            <h1>Felipe Bernardes</h1>
-            <p>Subtitulo</p>
-            <p>Lorem ipsum here</p>
+            <div class="title">
+                <h1>Felipe Bernardes</h1>
+                <p><span>designer, desenvolvedor & </span>artesão de sites</p>
+            </div>
+            <p class="about">23 anos, votorantinense cosmopólita e entusiasta da transformação global por meio das minhas ferramentas favoritas: tecnologia e criatividade.</p>
             <div class="actions">
-                <a>portfolio</a>
-                <a>cont(r)ate-me</a>
+                <a href="#jobs">portfolio</a>
+                <a href="#contact">cont(r)ate-me</a>
             </div>
         </header>
-        <section class="job-section">
-            <div>
-                <h2 class="job-title">job title</h2>
-                <h3 class="job-subtitle">job subtitle</h3>
-                <p class="job-details">details</p>
+        <section id="jobs" class="job-section">
+            <div class="card">
+                <h2 class="job-title">Carrorama</h2>
+                <h3 class="job-subtitle">site para aplicativo</h3>
+                <div class="job-details">
+                    <p>O Carrorama é o melhor aplicativo para cortar gastos automotivos e cuidar melhor do seu veículo e já chegou a ser destaque na App Store.</p>
+                    <p>Como é um app de várias funções, foi preciso de um site com uma página inicial apresentando o app de forma geral e também páginas secundárias como o FAQ e a página de funcionalidades.</p>
+                </div>
                 <div class="actions">
-                    <a>+info</a>
-                    <a>www<span class="fa fa-link-external"></span></a>
+                    <a href="#">+info</a>
+                    <a href="http://carrorama.net" target="_blank">www<span class="fa fa-external-link"></span></a>
                 </div>
             </div>
         </section>
-        <section class="contact-section">
-            <h2>call to action</h2>
-            <p>some inciting text here</p>
-            <div class="actions">
-                <a>bernardes.flp@gmail.com</a>
-                <a>(15) 9 9644-1056</a>
+        <section id="jobs" class="job-section">
+            <div class="card">
+                <h2 class="job-title">Tegra</h2>
+                <h3 class="job-subtitle">site para empresa</h3>
+                <div class="job-details">
+                    <p>A Tegra é uma inovadora tecnológica de Sorocaba, SP. Eles oferecem soluções em tecnologia, incluindo Business Analytics e Desenvolvimento de Software Sob Medida.</p>
+                    <p>O resultado foi um site desenhado e codificado com técnicas de minimalismo, mobile-first, keep it simple.</p>
+                </div>
+                <div class="actions">
+                    <a href="#">+info</a>
+                    <a href="http://tegra.me" target="_blank">www<span class="fa fa-external-link"></span></a>
+                </div>
             </div>
         </section>
+        <section id="jobs" class="job-section">
+            <div class="card">
+                <h2 class="job-title">Titan</h2>
+                <h3 class="job-subtitle">site para aplicativo</h3>
+                <div class="job-details">
+                    <p>A melhor forma de se economizar e organizar catálogos digitalmente é usando o Titan.</p>
+                    <p>O resultado foi uma landing page simples, bonita e direta ao ponto que apresenta o aplicativo e seus benefícios com uma linguagem amigavelmente corporativa.</p>
+                </div>
+                <div class="actions">
+                    <a href="#">+info</a>
+                    <a href="http://titan.tegra.me" target="_blank">www<span class="fa fa-external-link"></span></a>
+                </div>
+            </div>
+        </section>                
+        <section id="contact" class="contact-section">
+            <h2>Vamos criar algo único!</h2>
+            <p>Se você tem um projeto único e precisa de um designer & desenvolvedor que trata conteúdo, pixels & código minuciosamente, vamos conversar.</p>
+            <div class="actions">
+                <a href="mailto:bernardes.flp@gmail.com">bernardes.flp@gmail.com</a>
+                <a href="tel:+5515996441056">(15) 9 9644-1056</a>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/main.js"></script>
         <footer>
-            <p class="signature"><span class="fa fa-creative-commons"></span> Felipe Bernardes</p>
+            <p class="signature"><span class="fa fa-copyright"></span> Felipe Bernardes</p>
             <ul class="social-links">
-                <li><a><span class="fa fa-codepen"></span></a></li>
-                <li><a><span class="fa fa-medium"></span></a></li>
-                <li><a><span class="fa fa-linkedin"></span></a></li>
-                <li><a><span class="fa fa-github"></span></a></li>
+                <li><a href="http://codepen.io/felipebernardes/" target="_blank"><span class="fa fa-codepen"></span></a></li>
+                <li><a href="https://medium.com/@felipebernardes" target="_blank"><span class="fa fa-medium"></span></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=104979777" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://github.com/felipebernardes" target="_blank"><span class="fa fa-github"></span></a></li>
             </ul>
         </footer>
     </body>

@@ -1,0 +1,103 @@
+header {
+    @include display-flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-image: url('../img/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40vw bottom;
+    
+    @include landscape {
+        background-position: 40vw top;
+    }
+    
+    @include desktop {
+        background-position: right bottom;
+        background-size: auto 90%;
+        z-index: 1;
+        
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 40vw;
+            width: 60%;
+            height: 100%;
+            background: #75df7a;
+            content: '';
+            z-index: -1;
+        }
+    }
+    
+    .title {
+        width: 70vw;
+        margin: 0 0 0 5vw;
+        
+        @include desktop {
+            margin: 0 0 0 10vw;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #000;
+            color: rgba(0,0,0,0.6);
+        }
+
+        p {
+            margin-top: .5rem;
+            color: #555;
+            color: rgba(50,50,50,0.5);            
+            
+            span {
+                display: none;
+                
+                @include tablet {
+                    display: inline;
+                }
+            }
+        }
+    }
+    
+    .about {
+        color: #555;
+        color: rgba(80,80,80,0.9);
+        width: 70vw;
+        margin-left: 5vw;
+        
+        @include tablet {
+            margin-top: -10vh;
+            max-width: 60vw;
+        }
+        
+        @include desktop {
+            max-width: 30vw;
+            margin-left: 10vw;
+        }
+    }
+    
+    .actions {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        
+        @include desktop {
+            width: 55%;
+            max-width: 940px;
+            margin: 0 auto 0 5vw;
+        }
+        
+        a {
+            margin: auto;
+            color: #FFF;
+            text-align: center;
+            width: 40%;
+            max-width: 220px;
+            background-color: rgba(0,0,0,.7);
+            transition: background .2s linear;
+            
+            &:hover {
+                background-color: rgba(0,10,0,.9);
+                transition: background .2s linear;
+            }
+        }
+    }
+}
