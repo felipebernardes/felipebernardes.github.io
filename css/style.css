@@ -706,6 +706,7 @@ header {
       .contact-section p {
         text-align: left;
         width: 20%;
+        min-width: 420px;
         margin: 0 0 auto auto; } }
   .contact-section .actions {
     margin: auto; }
