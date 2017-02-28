@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="612px" height="77px" viewBox="0 0 612 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>H1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="portifa" sketch:type="MSArtboardGroup" transform="translate(-84.000000, -85.000000)">
+            <g id="header" sketch:type="MSLayerGroup">
+                <g id="H1" transform="translate(77.000000, 70.000000)">
+                    <rect id="Rectangle-1" fill="#142D2C" sketch:type="MSShapeGroup" x="10.1960784" y="20.4444444" width="603.607843" height="71.5555556"></rect>
+                    <text id="Felipe-Bernardes" sketch:type="MSTextLayer" font-family="Montserrat" font-size="73.4117647" font-weight="normal" fill="#9CB0AF">
+                        <tspan x="0" y="71">Felipe Bernardes</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

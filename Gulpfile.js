@@ -26,8 +26,8 @@ gulp.task('watch',function() {
 gulp.task('sync', function() {
 
     browserSync.init({
-        server: ""
+        server: "./"
     });
     gulp.watch("scss/*.scss", ['styles']);
-    gulp.watch("index.html").on('change', browserSync.reload);
+    gulp.watch(["index.html", "css/*.css"]).on('change', browserSync.reload);
 });
