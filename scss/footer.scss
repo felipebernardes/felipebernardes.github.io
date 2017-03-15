@@ -1,0 +1,17 @@
+footer {
+  background-color: $gray-green;
+  padding: 1rem 5vw;
+  display: flex;
+  flex-flow: column;
+
+  p {
+    font-family: 'Rock Salt', sans-serif;
+    color: $light-green;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  ul {
+
+  }
+}
