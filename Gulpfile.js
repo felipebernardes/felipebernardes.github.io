@@ -18,16 +18,14 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./css/'))
 });
 
-
 gulp.task('watch',function() {
     gulp.watch('scss/**/*.scss',['styles']);
 });
 
-gulp.task('sync', function() {
-
+gulp.task('default', function() {
     browserSync.init({
         server: "./"
     });
-    gulp.watch("scss/*.scss", ['styles']);
+    gulp.watch("scss/**/*.scss", ['styles']);
     gulp.watch(["index.html", "css/*.css"]).on('change', browserSync.reload);
 });
