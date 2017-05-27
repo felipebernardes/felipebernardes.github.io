@@ -2,6 +2,8 @@
 *:after,
 *:before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -20,7 +22,6 @@ a:visited,
 a:hover {
   display: inline-block;
   text-decoration: none;
-  color: #333;
 }
 
 h1,
@@ -29,12 +30,6 @@ h3,
 p {
   font-size: 1rem;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-li {
   margin: 0;
   padding: 0;
 }

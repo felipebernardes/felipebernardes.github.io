@@ -1,7 +1,10 @@
-@import 'variables.scss';
-@import 'reset.scss';
+@import 'base/_variables.scss';
+@import 'base/_reset.scss';
 
-@import 'header.scss';
-@import 'portfolio.scss';
-@import 'contact.scss';
-@import 'footer.scss';
+@import 'components/_action-link';
+@import 'components/_language-list';
+
+@import 'partials/_header.scss';
+//@import 'partials/_portfolio.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_footer.scss';

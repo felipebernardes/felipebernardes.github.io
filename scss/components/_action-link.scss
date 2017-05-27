@@ -1,0 +1,16 @@
+.action-link {
+  background: $light-green;
+  padding: 1rem;
+  min-width: 45%;
+  text-align: center;
+  color: $dark-green;
+  margin: auto;
+
+  &:hover {
+    background: darken($light-green, 10%);
+  }
+
+  &:active {
+    background: darken($light-green, 20%);
+  }
+}

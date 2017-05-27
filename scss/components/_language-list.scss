@@ -1,0 +1,52 @@
+.language-list {
+  display: flex;
+  margin: 0 auto;
+  width: 92%;
+  justify-content: center;
+
+  &__option {
+    width: 100%;
+    position: relative;
+    padding: 0 .25rem;
+    text-align: center;
+    display: flex;
+
+    &:nth-of-type(2) {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        height: 1rem;
+        width: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $dark-green;
+      }
+
+      &:after {
+        left: -0.5px;
+      }
+
+      &:before {
+        right: 0.5px;
+      }
+    }
+  }
+
+  &__link {
+    color: $dark-green;
+    padding: .5rem 0;
+    text-align: center;
+    font-weight: lighter;
+    margin: auto;
+
+    &--active {
+      color: $dark-green;
+      margin: auto;
+      font-weight: bold;
+      background: $light-green;
+    }
+  }
+}
