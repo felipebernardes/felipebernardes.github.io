@@ -1,0 +1,14 @@
+.body {
+  background: linear-gradient(to bottom left, $white, darken($white, 3%));
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color: $black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+  }
+}

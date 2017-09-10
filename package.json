@@ -1,24 +1,30 @@
 {
-  "name": "portfolio",
-  "version": "0.0.0",
-  "description": "Time to build my portfolio!",
-  "main": "index.js",
+  "name": "felipebernardes.github.io",
+  "version": "3.0.0",
+  "description": "This is my site!",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/felipebernardes/portfolio.git"
+    "url": "git+https://github.com/felipebernardes/felipebernardes.github.io.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "keywords": [
+    "portfolio",
+    "personal",
+    "site"
+  ],
+  "author": "Felipe Bernardes",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/felipebernardes/portfolio/issues"
+    "url": "https://github.com/felipebernardes/felipebernardes.github.io/issues"
   },
-  "devDependencies": {
-    "browser-sync": "^2.8.2",
-    "gulp": "~3.9.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "~2.0.4"
+  "homepage": "https://github.com/felipebernardes/felipebernardes.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
   }
 }
