@@ -1,6 +1,7 @@
 .body {
   background: linear-gradient(to bottom left, $white, darken($white, 3%));
   position: relative;
+  min-height: 100vh;
 
   &:before {
     content: '';
