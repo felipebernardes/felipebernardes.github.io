@@ -1,6 +1,8 @@
 .nav {
   position: relative;
-  top: -30px;
+  @media (orientation: portrait) {
+    top: -30px;
+  }
 
   @media (min-width: 768px) {
     top: 0;
@@ -14,6 +16,7 @@
     @media (min-width: 768px) {
       text-align: right;
       margin: 40px 0 auto auto;
+      top: -30px;
     }
   }
 
