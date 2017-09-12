@@ -1,13 +1,10 @@
 .footer {
   background-color: $black;
   padding: .2rem 4%;
-
-  @media (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
   &__credits {
     font-weight: 300;
