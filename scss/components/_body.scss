@@ -2,6 +2,10 @@
   background: linear-gradient(to bottom left, $white, darken($white, 3%));
   position: relative;
 
+  @media (min-width: 1024px) {
+    overflow: hidden;
+  }
+
   &:before {
     content: '';
     background-color: $black;
