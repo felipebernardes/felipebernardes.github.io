@@ -15,7 +15,13 @@
     }
   }
 
-  .about__text:last-of-type {
-    margin-bottom: 0;
+
+
+  .about__text {
+    max-width: 560px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

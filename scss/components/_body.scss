@@ -3,7 +3,9 @@
   position: relative;
 
   @media (min-width: 1024px) {
-    overflow: hidden;
+    &.index {
+      overflow: hidden;
+    }
   }
 
   &:before {

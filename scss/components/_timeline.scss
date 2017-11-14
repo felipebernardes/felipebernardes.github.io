@@ -4,9 +4,20 @@
   border-left: 5px solid $light-green;
   padding: 3rem 0;
 
+  @media (min-width: 768px) {
+    margin-left: 25vw;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: 20vw;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 15vw;
+  }
+
   &__item {
     position: relative;
-
     margin-top: 120px;
 
     &:nth-child(1),
@@ -23,6 +34,12 @@
     position: absolute;
     left: -136px;
     top: 4px;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+      width: 170px;
+      left: -186px;
+    }
   }
 }
 
@@ -38,6 +55,10 @@
       display: inline-block;
       font-size: .85rem;
       padding: 4px 8px 4px 8px;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
     }
 
     &__detail {
