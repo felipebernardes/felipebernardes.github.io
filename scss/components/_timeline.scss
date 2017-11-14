@@ -77,10 +77,6 @@
         font-weight: lighter;
       }
 
-      &__link {
-
-      }
-
       &__picture {
         max-width: 100%;
         margin-top: 1.1rem;
@@ -107,6 +103,7 @@
       }
 
       .entries__item__detail {
+        pointer-events: none;
         position: absolute;
         left: 120%;
         top: 0;
