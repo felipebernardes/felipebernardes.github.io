@@ -2,7 +2,7 @@
   list-style: none;
   margin-left: 130px;
   border-left: 5px solid $light-green;
-  padding: 3rem 0;
+  padding: 3rem 0 400px 0;
 
   @media (min-width: 768px) {
     margin-left: 25vw;
@@ -48,6 +48,8 @@
 
   &__item  {
     margin-top: 40px;
+    max-width: 400px;
+    position: relative;
 
     &__title {
       background-color: $light-green;
@@ -63,6 +65,66 @@
 
     &__detail {
       display: none;
+
+      &__title {
+        transition: all .5s linear;
+        font-size: 1.1rem;
+      }
+
+      &__text {
+        margin-top: 1.1rem;
+        font-size: .9rem;
+        font-weight: lighter;
+      }
+
+      &__link {
+
+      }
+
+      &__picture {
+        max-width: 100%;
+        margin-top: 1.1rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      &:hover .entries__item__detail {
+        opacity: 1;
+      }
+
+      &:hover &__title {
+        &:after {
+          content: '';
+          width: 480px;
+          height: 5px;
+          background-color: $light-green;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: -1;
+        }
+      }
+
+      .entries__item__detail {
+        position: absolute;
+        left: 120%;
+        top: 0;
+        opacity: 0;
+        transition: all .5s linear;
+        display: block;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0,0,0,.15);
+        padding: 1.5rem;
+        width: 420px;
+        border-left: 5px solid $light-green;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .entries__item__detail {
+        width: 540px;
+      }
     }
   }
 }
