@@ -68,6 +68,7 @@
   &__photo-container {
     box-shadow: 1px 1px 15px rgba(0,0,0,.3);
     width: 100px;
+    height: 100px;
 
     @media (min-width: 768px) {
       width: 20%;
