@@ -22,4 +22,13 @@
       margin-bottom: 0;
     }
   }
+
+  .tldr-container {
+    margin-top: 1.1rem;
+
+    .tldr__text {
+      font-size: .85rem;
+      color: rgba(0,0,0,.5);
+    }
+  }
 }
