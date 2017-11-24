@@ -59,6 +59,20 @@
       font-size: .85rem;
       padding: 4px 8px 4px 8px;
 
+      &:after {
+        content: '';
+        width: 640px;
+        height: 5px;
+        background-color: $light-green;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+        opacity: 0;
+        transition: 3s ease linear;
+      }
+
       @media (min-width: 768px) {
         font-size: 1.1rem;
       }
@@ -68,7 +82,17 @@
       display: none;
       position: relative;
       text-align: center; //TODO fix this, it just centers the image
-      z-index: -1; //TODO fix it when turning into a lib
+      position: absolute;
+      left: 160%;
+      top: 0;
+      opacity: 0;
+      transition: all .5s linear;
+      display: block;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,.15);
+      padding: 1.5rem;
+      width: 420px;
+      border-left: 5px solid $light-green;
 
       &__tag {
         transition: all .5s linear;
@@ -97,37 +121,13 @@
     }
 
     @media (min-width: 1024px) {
-      &:hover .entries__item__detail {
+
+      &.active .entries__item__detail {
         opacity: 1;
       }
 
-      &:hover &__title {
-        &:after {
-          content: '';
-          width: 640px;
-          height: 5px;
-          background-color: $light-green;
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: -1;
-        }
-      }
-
-      .entries__item__detail {
-        pointer-events: none;
-        position: absolute;
-        left: 160%;
-        top: 0;
-        opacity: 0;
-        transition: all .5s linear;
-        display: block;
-        background: #fff;
-        box-shadow: 0 10px 20px rgba(0,0,0,.15);
-        padding: 1.5rem;
-        width: 420px;
-        border-left: 5px solid $light-green;
+      &.active &__title:after {
+        opacity: 1;
       }
     }
   }
