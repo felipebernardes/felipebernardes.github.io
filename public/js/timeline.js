@@ -18,6 +18,6 @@
       $(entries[i]).addClass('active');
       $(details[i]).addClass('active');
       lastActiveIndex = i;
-    });
+    }); 
   });
 })();
