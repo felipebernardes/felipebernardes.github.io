@@ -22,7 +22,7 @@ gulp.task('scss', () => {
   .pipe(gulp.dest('./public/css/'));
 });
 
-gulp.task('pug', () => {
+gulp.task('html', () => {
   gulp.src('./src/*.html')
   .pipe(gulp.dest('./public/'));
 });
@@ -37,9 +37,7 @@ gulp.task('img', () => {
   .pipe(gulp.dest('./public/img/favicon/'));
 
   gulp.src('./src/img/timeline/*.*')
-  .pipe(responsive({
-    '*': { width: 370 }
-   }))
+  .pipe(responsive({ '*': { width: 370 } }))
   .pipe(imgMin())
   .pipe(gulp.dest('./public/img/timeline/'));
 });
@@ -49,7 +47,7 @@ gulp.task('default', () => {
 
   gulp.watch("./src/js/**/*.js", ['js']);
   gulp.watch("./src/scss/**/*.scss", ['scss']);
-  gulp.watch("./src/*.html", ['pug']);
+  gulp.watch("./src/*.html", ['html']);
   gulp.watch("./src/img/*.*", ['img']);
 
   gulp.watch("./public/**/*.*").on('change', browserSync.reload);
