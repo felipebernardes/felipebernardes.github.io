@@ -2,7 +2,13 @@
   background: linear-gradient(to bottom left, $white, darken($white, 3%));
   position: relative;
 
-  @media (min-width: 1024px) {
+  @media (width: 1024px) {
+    &.index {
+      overflow: hidden;
+    }
+  }
+
+  @media (min-width: 1024px) and (min-height: 750px) {
     &.index {
       overflow: hidden;
     }

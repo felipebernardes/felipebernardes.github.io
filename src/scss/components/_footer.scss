@@ -1,4 +1,13 @@
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 768px) {
+  .index footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-height: 750px) {
   .index footer {
     position: fixed;
     bottom: 0;
@@ -10,6 +19,7 @@
 .footer {
   background-color: $black;
   padding: .2rem 4%;
+  z-index: 100;
 
   &__credits {
     font-weight: 300;
