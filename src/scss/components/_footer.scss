@@ -1,11 +1,11 @@
-@media (min-width: 360px) and (max-width: 768px) {
-  .index footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-}
+// @media (min-width: 360px) and (max-width: 768px) {
+//   .index footer {
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//   }
+// }
 
 @media (min-height: 750px) {
   .index footer {
@@ -17,17 +17,15 @@
 }
 
 .footer {
+  background-color: $color-main-light;
   background-color: var(--color-main-light);
-  //background-image: linear-gradient(to right, var(--pink-light) 24.99%, var(--yellow-light) 25%, var(--yellow-light) 49.99%, var(--green-light) 50%, var(--green-light) 74.99%, var(--blue-light) 75%, var(--blue-light));
-  //background-color: $black;
   padding: .25rem 4%;
   z-index: 100;
 
   &__credits {
     font-weight: 700;
     font-size: .8rem;
-    color: lighten($gray, 50%);
-    color: $black;
+    color: $color-main-dark;
     color: var(--color-main-dark);
     text-align: right;
 

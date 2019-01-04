@@ -1,11 +1,9 @@
 .nav {
   position: relative;
-  @media (orientation: portrait) {
-    top: -30px;
-  }
+  top: 20px;
 
   @media (min-width: 768px) {
-    top: 0;
+    top: 80px;
     display: flex;
     width: 100%;
   }
@@ -30,7 +28,7 @@
       margin-bottom: .6rem;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1366px) {
       font-size: 1.4rem;
       margin-bottom: .7rem;
     }
