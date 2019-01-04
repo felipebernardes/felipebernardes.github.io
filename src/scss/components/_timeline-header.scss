@@ -10,8 +10,10 @@
       margin-left: .4rem;
       display: inline-block;
       padding: .1rem .6rem .1rem .1rem;
-      color: $dark-green;
-      background-color: $light-green;
+      color: $color-main-dark;
+      color: var(--color-main-dark);
+      background-color: $color-main-light;
+      background-color: var(--color-main-light);
     }
   }
 

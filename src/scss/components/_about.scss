@@ -14,7 +14,7 @@
   @media (min-width: 1024px) {
     width: 92%;
     margin: auto;
-    top: -200px;
+    top: -220px;
   }
 
   a {
@@ -29,14 +29,13 @@
     margin-bottom: 1rem;
 
     @media (min-width: 768px) {
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.4rem;
       margin-bottom: 1.2rem;
     }
 
     @media (min-width: 1024px) {
-      max-width: 700px;
-      font-size: 1.2rem;
+      max-width: 750px;
       line-height: 1.5rem;
       margin-bottom: 1.6rem;
     }
