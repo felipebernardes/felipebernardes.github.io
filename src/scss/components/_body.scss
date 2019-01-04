@@ -17,6 +17,8 @@
   &:before {
     content: '';
     background-color: $black;
+    background-image: linear-gradient(to right, var(--pink-light), var(--yellow-light), var(--green-light), var(--blue-light));
+    background-image: linear-gradient(to right, var(--pink-light) 24.99%, var(--yellow-light) 25%, var(--yellow-light) 49.99%, var(--green-light) 50%, var(--green-light) 74.99%, var(--blue-light) 75%, var(--blue-light));
     position: absolute;
     top: 0;
     left: 0;

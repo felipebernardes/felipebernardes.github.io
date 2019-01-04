@@ -40,8 +40,10 @@
   &__name {
     display: inline-block;
     padding: .1rem .6rem .1rem .1rem;
-    color: $dark-green;
-    background-color: $light-green;
+    color: $color-main-dark;
+    color: var(--color-main-dark);
+    background-color: $color-main-light;
+    background-color: var(--color-main-light);
     position: relative;
 
     &:before {
@@ -50,9 +52,9 @@
       bottom: 0;
       left: 100%;
       width: 100px;
-      height: 1px;
-      background-color: $dark-green;
-      background-color: $light-green;
+      height: 1.5px;
+      background-color: $color-main-light;
+      background-color: var(--color-main-light);
       z-index: -1;
 
       @media (min-width: 768px) {
@@ -68,13 +70,20 @@
   &__photo-container {
     box-shadow: 1px 1px 15px rgba(0,0,0,.3);
     width: 100px;
+    min-height: 100px;
+    background-color: $color-main-dark;
+    background-color: var(--color-main-dark);
 
     @media (min-width: 768px) {
       width: 20%;
     }
 
     &__photo {
-      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      opacity: .9;
     }
   }
 }

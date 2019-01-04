@@ -1,5 +1,22 @@
 $black: #111111;
-$gray: #666666;
+$gray: #555555;
 $white: #fafafa;
-$dark-green: #1B3C23;
-$light-green: #65FF88;
+$pink: #ff6675;
+$green: #65FF88;
+$blue: #66fcff;
+$yellow: #ffea66;
+$color-main-light: $yellow;
+$color-main-dark: darken($color-main-light, 50%);
+
+:root {
+  --pink-light: #ff6675;
+  --pink-dark: #66000a;
+  --green-light: #65FF88;
+  --green-dark: #006517;
+  --blue-light: #66fcff;
+  --blue-dark: #006466;
+  --yellow-light: #ffea66;
+  --yellow-dark: #665800;
+  --color-main-light: var(--yellow-light);
+  --color-main-dark: var(--yellow-dark);
+}

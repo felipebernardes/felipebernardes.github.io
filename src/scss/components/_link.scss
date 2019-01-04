@@ -14,7 +14,8 @@ a {
   }
 
   &:hover {
-    color: $dark-green;
+    color: $color-main-dark;
+    color: var(--color-main-dark);
 
     &:before {
       opacity: 1;
@@ -28,7 +29,8 @@ a {
     left: 0;
     bottom: -2px;
     width: 100%;
-    background-color: $light-green;
+    background-color: $color-main-light;
+    background-color: var(--color-main-light);
     z-index: -1;
     transition: all .4s ease;
   }
