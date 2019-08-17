@@ -80,10 +80,11 @@
     height: 200px;
     margin: 5vmin auto auto auto;
     position: relative;
-    left: 10vw;
+    left: 10%;
 
     @media (min-width: $tablet-portrait-width) {
       margin: 10vh auto 0 auto;
+      //left: 10vw;
     }
 
     @media (min-width: $laptop-width) {
