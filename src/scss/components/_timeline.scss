@@ -1,6 +1,17 @@
 .timeline-header {
-  background: #fff;
-  padding: 5vh 5vw;
+  padding: 10vh 5vw 5vh 5vw;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    background-image: linear-gradient(to bottom right, $white, darken($white, 3%));
+  }
 
   .timeline-header__title {
     font-size: 1.3rem;
@@ -10,10 +21,8 @@
       margin-left: .4rem;
       display: inline-block;
       padding: .1rem .6rem .1rem .1rem;
-      color: $color-main-dark;
-      color: var(--color-main-dark);
-      background-color: $color-main-light;
-      background-color: var(--color-main-light);
+      color: $color-main;
+      background-color: lighten($color-alt, 25%);
     }
   }
 
@@ -39,8 +48,7 @@
 .timeline {
   list-style: none;
   margin-left: 130px;
-  border-left: 5px solid $color-main-light;
-  border-left: 5px solid var(--color-main-light);
+  border-left: 5px solid lighten($color-alt, 25%);
   padding: 3rem 0 200px 0;
 
   @media (min-width: $tablet-portrait-width) {
@@ -58,6 +66,7 @@
   &__item {
     position: relative;
     margin-top: 120px;
+    cursor: pointer;
 
     &:nth-child(1),
     &:nth-child(1) .entries__item:nth-of-type(1) {
@@ -92,10 +101,8 @@
     position: relative;
 
     &__title {
-      background-color: $color-main-light;
-      background-color: var(--color-main-light);
-      color: $color-main-dark;
-      color: var(--color-main-dark);
+      background-color: lighten($color-alt, 25%);
+      color: $color-main;
       display: inline-block;
       font-size: .85rem;
       padding: 4px 8px 4px 8px;
@@ -104,8 +111,7 @@
         content: '';
         width: 640px;
         height: 5px;
-        background-color: $color-main-light;
-        background-color: var(--color-main-light);
+        background-color: lighten($color-alt, 25%);
         position: absolute;
         left: 0;
         top: 50%;
@@ -134,16 +140,13 @@
       box-shadow: 0 10px 20px rgba(0,0,0,.15);
       padding: 1.5rem;
       width: 420px;
-      border-left: 5px solid $color-main-light;
-      border-left: 5px solid var(--color-main-light);
+      border-left: 5px solid lighten($color-alt, 25%);
 
       &__tag {
         transition: all .5s linear;
         font-size: 1.1rem;
-        background: $color-main-light;
-        background: var(--color-main-light);
-        color: $color-main-dark;
-        color: var(--color-main-dark);
+        background: lighten($color-alt, 25%);
+        color: $color-main;
         position: absolute;
         right: 0;
         top: 0;
