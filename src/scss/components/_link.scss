@@ -1,21 +1,19 @@
 a {
-  color: $black;
+  color: $color-main;
   text-decoration: none;
   position: relative;
   transition: all .1s linear;
-  font-weight: 400;
-  z-index: 2;
+  z-index: 1;
 
   &:hover,
   &:focus,
   &:active,
   &:visited {
-    color: $black;
+    color: $color-main;
   }
 
   &:hover {
-    color: $color-main-dark;
-    color: var(--color-main-dark);
+    color: $color-main;
 
     &:before {
       opacity: 1;
@@ -27,16 +25,15 @@ a {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -1px;
     width: 100%;
-    background-color: $color-main-light;
-    background-color: var(--color-main-light);
-    z-index: -1;
+    background-color: lighten($color-alt, 25%);
     transition: all .4s ease;
+    z-index: -4;
   }
 
   &:after {
-    height: .5rem;
+    height: .25rem;
   }
 
   &:before {

@@ -1,4 +1,13 @@
 body {
   font-size: 16px;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Futura', 'Hind', sans-serif;
+  color: $color-main;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }

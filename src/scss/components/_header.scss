@@ -1,97 +1,237 @@
 .header {
-  width: 92%;
-  max-width: 1100px;
-  margin: auto;
+  min-height: 100vh;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-portrait-width) {
+    padding: 0 $padding-small;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  @media (min-width: $tablet-landscape-width) {
+    min-height: 100vh;
+    padding: $padding-small;
+  }
+
+  @media (min-width: $laptop-width) {
+    padding: $padding-small $padding-medium;
+  }
+
+  @media (min-width: $fullhd-width) {
+    padding: $padding-small $padding-large;
+  }
+
+  &__hello {
+    margin: 10vh auto 0 auto;
+
+    @media (min-width: $tablet-portrait-width) {
+      margin: 10vh 0 0 0;
+      height: auto;
+      width: 50%;
+      max-width: 500px;
+    }
+  }
 
   &__title {
-    color: #111;
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-top: 5vh;
+    font-size: 1.4rem;
+    line-height: 140%;
+    font-weight: normal;
 
-    @media (min-width: 768px) {
-      margin-top: 10vh;
-    }
-
-    @media (min-width: 768px) {
-      width: 80%;
+    @media (min-width: $tablet-portrait-width) {
       font-size: 2rem;
     }
 
-    @media (min-width: 1024px) {
-      font-size: 2.4rem;
-      position: relative;
-      top: 5vh;
+    @media (min-width: $tablet-landscape-width) {
+      font-size: 2.5rem;
     }
 
-    &__hello {
+    @media (min-width: $laptop-width) {
+      font-size: 3rem;
+    }
+
+    &__name {
       display: block;
-
-      @media (min-width: 1024px) {
-        display: inline-block;
-        margin-right: .8rem;
-      }
+      font-weight: bold;
     }
   }
 
-  &__name {
-    display: inline-block;
-    padding: .1rem .6rem .1rem .1rem;
-    color: $color-main-dark;
-    color: var(--color-main-dark);
-    background-color: $color-main-light;
-    background-color: var(--color-main-light);
-    position: relative;
+  &__subtitle {
+    margin: .5rem auto 2rem auto;
+    text-align: left;
 
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 100%;
+    @media (min-width: $tablet-portrait-width) {
+      font-size: 1.1rem;
+    }
+
+    @media (min-width: $tablet-landscape-width) {
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: $laptop-width) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__pictures {
+    width: 200px;
+    height: 200px;
+    margin: 5vmin auto auto auto;
+    position: relative;
+    left: 10vw;
+
+    @media (min-width: $tablet-portrait-width) {
+      margin: 10vh auto 0 auto;
+    }
+
+    @media (min-width: $laptop-width) {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__item {
       width: 100px;
-      height: 1.5px;
-      background-color: $color-main-light;
-      background-color: var(--color-main-light);
-      z-index: -1;
+      height: 100px;
+      position: absolute;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
 
-      @media (portrait) {
-        display: none;
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        transition: all .08s ease;
+        border: 4px dashed $color-main;
       }
 
-      @media (min-width: 768px) {
-        display: block;
-        width: 300px;
+      @media (min-width: $tablet-portrait-width) {
+        width: 150px;
+        height: 150px;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
       }
 
-      @media (min-width: 1366px) {
-        width: 300px;
+      @media (min-width: $laptop-width) {
+        width: 200px;
+        height: 200px;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+
+        img:hover {
+          border: 8px dashed $color-main;
+        }
       }
+
+      &:nth-of-type(1) {
+        transform: rotate(10deg);
+        top: 50%;
+        left: -10%;
+        z-index: 10;
+
+        @media (min-width: $tablet-portrait-width) {
+          top: 80%;
+          left: -40%;
+        }
+
+        @media (min-width: $laptop-width) {
+          img:hover {
+            transform: scale(1.4) translate(10%);
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        transform: rotate(-6deg);
+        top: 20%;
+        left: 20%;
+        z-index: 9;
+
+        @media (min-width: $tablet-portrait-width) {
+          top: 40%;
+        }
+
+        @media (min-width: $laptop-width) {
+          img:hover {
+            transform: scale(1.4) translate(15%);
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        transform: rotate(-2deg);
+        top: 5%;
+        left: -15%;
+        z-index: 8;
+
+        @media (min-width: $tablet-portrait-width) {
+          left: -45%;
+        }
+
+        @media (min-width: $laptop-width) {
+          img:hover {
+            transform: scale(1.4) translate(-15%);
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        transform: rotate(10deg);
+        top: -10%;
+        left: 30%;
+        z-index: 7;
+
+        @media (min-width: $tablet-portrait-width) {
+          left: 20%;
+        }
+
+        @media (min-width: $laptop-width) {
+          img:hover {
+            transform: scale(1.4) translate(15%, -15%);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.nav {
+  margin: 0 auto $padding-small auto;
+
+  @media (min-width: $tablet-portrait-width) {
+    margin: 0 auto 0 0;
+    width: 50%;
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: $tablet-landscape-width) {
+    font-size: 1.4rem;
+    margin-top: 20vh;
+  }
+
+  @media (min-width: $laptop-width) {
+    font-size: 1.5rem;
+  }
+
+  &__list {
+    display: flex;
+
+    @media (min-width: $tablet-portrait-width) {
+      flex-flow: column;
     }
   }
 
-  &__photo-container {
-    box-shadow: 1px 1px 15px rgba(0,0,0,.3);
-    width: 100px;
-    min-height: 100px;
-    background-color: $color-main-dark;
-    background-color: var(--color-main-dark);
-    position: relative;
-    top: 20px;
+  &__item {
+    margin: 0 1rem;
 
-    @media (min-width: 768px) {
-      width: 20%;
-      top: 80px;
+    @media (min-width: $tablet-portrait-width) {
+      margin: .5rem auto .5rem 0;
     }
+  }
 
-    &__photo {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(100%);
-      opacity: .9;
-    }
+  &__link {
   }
 }

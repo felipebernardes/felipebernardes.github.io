@@ -1,22 +1,38 @@
-$black: #111111;
+$black: #1b1b1b;
 $gray: #555555;
 $white: #fafafa;
-$pink: #ff6675;
-$green: #65FF88;
-$blue: #66fcff;
-$yellow: #ffea66;
-$color-main-light: $yellow;
-$color-main-dark: darken($color-main-light, 50%);
 
-:root {
-  --pink-light: #ff6675;
-  --pink-dark: #66000a;
-  --green-light: #65FF88;
-  --green-dark: #006517;
-  --blue-light: #66fcff;
-  --blue-dark: #006466;
-  --yellow-light: #ffea66;
-  --yellow-dark: #665800;
-  --color-main-light: var(--yellow-light);
-  --color-main-dark: var(--yellow-dark);
-}
+$purple-main: #511450;
+$purple-alt: #7543E4;
+$purple-light: #F2EFF6;
+
+$green-main: adjust-hue($purple-main, 230deg);
+$green-alt: adjust-hue($purple-alt, 230deg);
+$green-light: adjust-hue($purple-light, 230deg);
+
+$teal-main: adjust-hue($purple-main, 270deg);
+$teal-alt: adjust-hue($purple-alt, 270deg);
+$teal-light: adjust-hue($purple-light, 270deg);
+
+$blue-main: adjust-hue($purple-main, 290deg);
+$blue-alt: adjust-hue($purple-alt, 290deg);
+$blue-light: adjust-hue($purple-light, 290deg);
+
+$pink-main: adjust-hue($purple-main, 40deg);
+$pink-alt: adjust-hue($purple-alt, 80deg);
+$pink-light: adjust-hue($purple-light, 80deg);
+
+$color-main: $purple-main;
+$color-alt: $purple-alt;
+$color-light: $purple-light;
+$gradient: linear-gradient(to bottom right, $color-main, $color-alt);
+
+$tablet-portrait-width: 768px;
+$tablet-landscape-width: 1024px;
+$laptop-width: 1280px;
+$fullhd-width: 1920px;
+
+$frame-border-width: 5vmin;
+$padding-small: $frame-border-width * 2;
+$padding-medium: $frame-border-width * 3;
+$padding-large: $frame-border-width * 4;

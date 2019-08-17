@@ -1,35 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
-  background: linear-gradient(to bottom left, $white, darken($white, 3%));
-  position: relative;
+  background: linear-gradient(to bottom right, $white, darken($white, 3%));
   max-width: 100vw;
   overflow-x: hidden;
+  font-weight: 300;
+  position: relative;
 
-  @media (width: 768px) {
-    height: 100vh;
-  }
-
-  @media (width: 1024px) {
-    height: auto;
-    &.index {
-      overflow: hidden;
-    }
-  }
-
-  @media (min-width: 1024px) and (min-height: 750px) {
-    &.index {
-      overflow: hidden;
-    }
-  }
 
   &:before {
     content: '';
-    background-color: $black;
-    background-image: linear-gradient(to right, var(--pink-light), var(--yellow-light), var(--green-light), var(--blue-light));
-    background-image: linear-gradient(to right, var(--pink-light) 24.99%, var(--yellow-light) 25%, var(--yellow-light) 49.99%, var(--green-light) 50%, var(--green-light) 74.99%, var(--blue-light) 75%, var(--blue-light));
-    position: absolute;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 5px;
-    width: 100%;
+    z-index: -2;
+    border-style: solid;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom right, #{$color-main}, #{$color-alt});
+    border-image-width: $frame-border-width;
   }
+
+
+  //border-image fallback
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    border: $frame-border-width/2 dashed $color-alt;
+  }
+}
+
+.section-title {
+  margin: 0 0 1.5rem 0;
 }

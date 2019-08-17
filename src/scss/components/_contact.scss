@@ -1,0 +1,122 @@
+.contact {
+  padding: $padding-small;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  min-height: 50vh;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $color-light;
+    z-index: -3;
+  }
+
+  @media (min-width: $tablet-portrait-width) {
+    padding: 0 $frame-border-width 0 $padding-small;
+    min-height: auto;
+    display: grid;
+    grid-template-areas:  "title img"
+                          "list img"
+                          "list img"
+                          "list img";
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  @media (min-width: $laptop-width) {
+    padding: 0 $frame-border-width 0 $padding-medium;
+  }
+
+  @media (min-width: $fullhd-width) {
+    padding: 0 $frame-border-width 0 $padding-large;
+  }
+
+  .section-title {
+    @media (min-width: $tablet-portrait-width) {
+      margin-top: 2rem;
+    }
+  }
+
+  .grid-title {
+    grid-area: title;
+  }
+
+  .grid-list {
+    grid-area: list;
+  }
+
+  .grid-img {
+    grid-area: img;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: auto;
+
+    @media (min-width: $tablet-portrait-width) {
+      margin: 0 auto auto 0;
+    }
+  }
+
+  &__item {
+    margin: .5rem auto;
+
+    @media (min-width: $tablet-portrait-width) {
+      margin: .5rem 0;
+    }
+  }
+
+  &__img-container {
+    text-align: center;
+    z-index: -3;
+
+    @media (min-width: $tablet-portrait-width) {
+      background-color: #F8F8FA;
+      height: 400px;
+      width: 45vw;
+    }
+
+    @media (min-width: $tablet-landscape-width) {
+      width: 46.3vw;
+    }
+
+    @media (min-width: $laptop-width) {
+      width: 47.1vw;
+    }
+
+    @media (min-width: $fullhd-width) {
+      width: 46.8vw;
+    }
+
+    img {
+      border: 4px dashed $color-main;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      object-position: center;
+      margin-left: auto;
+      z-index: 1;
+
+      @media (min-width: $tablet-portrait-width) {
+        width: auto;
+        height: 380px;
+        margin-top: 20px;
+        border: none;
+      }
+    }
+  }
+}

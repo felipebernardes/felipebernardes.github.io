@@ -1,37 +1,26 @@
-// @media (min-width: 360px) and (max-width: 768px) {
-//   .index footer {
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//   }
-// }
-
-@media (min-height: 750px) {
-  .index footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-}
-
 .footer {
-  background-color: $color-main-light;
-  background-color: var(--color-main-light);
-  padding: .25rem 4%;
+  background-color: $color-alt;
+  background: linear-gradient(to right, #60288f, #723fd9);
+  padding: 1rem 5vmin;
   z-index: 100;
+  color: #fafafa;
 
   &__credits {
     font-weight: 700;
     font-size: .8rem;
-    color: $color-main-dark;
-    color: var(--color-main-dark);
+    color: #fafafa;
     text-align: right;
+  }
 
-    @media (min-width: 1366px) {
-      width: 1100px;
-      margin: auto;
+  &__quote {
+    margin: 1rem auto;
+    text-align: center;
+    font-size: .9rem;
+    max-width: 530px;
+    font-style: italic;
+
+    a {
+      color: #fafafa;
     }
   }
 }

@@ -1,44 +1,162 @@
 .about {
-  width: 92%;
-  max-width: 1100px;
-  margin: 2rem auto;
+  padding: $padding-small;
   position: relative;
 
-  @media (min-width: 768px) {
-    width: 70%;
-    margin: auto auto auto 4%;
-    top: -150px;
-    max-width: 500px;
+  &:before {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 110%;
+    content: '';
+    background-color: $color-light;
+    z-index: -5;
+    transform: rotate(-3deg);
   }
 
-  @media (min-width: 1024px) {
-    width: 92%;
-    top: -220px;
-    max-width: 1100px;
-    margin: 2.5rem auto auto auto;
+  @media (min-width: $tablet-portrait-width) {
+    padding: $padding-small $padding-small 0 $padding-small;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    &:before {
+      top: 5%;
+      height: 100%;
+    }
   }
 
-  a {
-    display: inline-block;
+  @media (min-width: $tablet-landscape-width) {
+    &:before {
+      top: -10%;
+      height: 110%;
+    }
+  }
+
+  @media (min-width: $laptop-width) {
+    padding: $padding-small $padding-medium 0 $padding-medium;
+  }
+
+  @media (min-width: $fullhd-width) {
+    padding: $padding-small $padding-medium 0 $padding-large;
+  }
+
+  .section-title {
+    width: 100%;
   }
 
   &__text {
-    hyphens: auto;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
     font-weight: 300;
-    font-size: .9rem;
-    line-height: 1.2rem;
-    margin-bottom: 1rem;
 
-    @media (min-width: 768px) {
-      font-size: .95rem;
-      line-height: 1.4rem;
-      margin-bottom: 1.2rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__main {
+    @media (min-width: $tablet-portrait-width) {
+      width: 50%;
+      max-width: 550px;
+      display: inline-block;
+    }
+  }
+
+  &__passions {
+    margin: 10vh auto;
+    position: relative;
+    left: 3.5vw;
+    transform: rotate(-5deg);
+
+    @media (min-width: $tablet-portrait-width) {
+      top: -2rem;
+      margin: 0 auto auto auto;
+      max-width: 550px;
+      transform: rotate(-6deg);
     }
 
-    @media (min-width: 1024px) {
-      max-width: 750px;
-      line-height: 1.5rem;
-      margin-bottom: 1.6rem;
+    @media (min-width: $tablet-landscape-width) {
+      top: -5rem;
+      transform: rotate(-7deg);
+    }
+
+    &__text {
+      font-family: 'Covered By Your Grace', monospace;
+      font-size: 1.5rem;
+      line-height: 1;
+      margin: 1rem auto;
+      position: relative;
+
+      @media (min-width: $tablet-portrait-width) {
+        margin: 1.3rem auto;
+      }
+
+      @media (min-width: $tablet-landscape-width) {
+        margin: 1.5rem auto;
+      }
+
+      &--small {
+        font-size: 1.4rem;
+
+        @media (min-width: $tablet-portrait-width) {
+          font-size: 1.6rem;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+          font-size: 1.8rem;
+        }
+      }
+
+      &--medium {
+        font-size: 1.8rem;
+
+        @media (min-width: $tablet-portrait-width) {
+          font-size: 2rem;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+          font-size: 2.3rem;
+        }
+      }
+
+      &--large {
+        font-size: 2.2rem;
+
+        @media (min-width: $tablet-portrait-width) {
+          font-size: 2.2rem;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+          font-size: 2.8rem;
+        }
+      }
+
+      @media (min-width: $tablet-landscape-width) {
+        &:nth-of-type(1) {
+          left: -2rem;
+        }
+
+        &:nth-of-type(2) {
+          left: -.5rem;
+        }
+
+        &:nth-of-type(3) {
+          left: .5rem;
+        }
+
+        &:nth-of-type(4) {
+          left: -1rem;
+        }
+
+        &:nth-of-type(5) {
+          left: .5rem;
+        }
+
+        &:nth-of-type(6) {
+          left: -.5rem;
+        }
+      }
     }
   }
 }
