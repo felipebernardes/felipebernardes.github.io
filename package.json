@@ -4,8 +4,8 @@
   "description": "Felipe Bernarde's Website",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build",
-    "deploy:prepare": "git checkout main && git merge wip && parcel build && mv dist . && git commit -m 'Deploy commit'",
+    "build": "rm -rf dist && parcel build src/index.html --no-content-hash",
+    "deploy:prepare": "git checkout main && git merge wip && npm run build && mv dist/**/*.* . && git commit -m 'Deploy commit'",
     "deploy:push": "git push origin main",
     "deploy": "npm run deploy:prepare && npm run deploy:push"
   },
