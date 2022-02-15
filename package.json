@@ -1,11 +1,12 @@
 {
   "name": "felipebernardes.github.io",
-  "version": "3.0.0",
-  "description": "This is my site!",
-  "main": "gulpfile.js",
+  "version": "3.1.0",
+  "description": "Felipe Bernarde's Website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html",
+    "build": "parcel build"
   },
+  "browserslist": "> 0.5%, last 10 versions, not dead",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felipebernardes/felipebernardes.github.io.git"
@@ -21,12 +22,8 @@
     "url": "https://github.com/felipebernardes/felipebernardes.github.io/issues"
   },
   "homepage": "https://github.com/felipebernardes/felipebernardes.github.io#readme",
-  "dependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-responsive": "^2.8.0",
-    "gulp-sass": "^3.1.0"
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1"
   }
 }
