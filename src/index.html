@@ -19,9 +19,6 @@
   <meta property="og:site_name" content="Felipe Bernardes">
   <meta property="og:description" content="Hello! this is my site.">
 
-  <meta name="twitter:site" content="@felip_bernardes" />
-  <meta name="twitter:card" content="summary_large_image" />
-
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -38,18 +35,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 
-
   <link defer href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="scss/style.scss">
 </head>
 <body class="body index">
   <script defer>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-67803598-1', 'auto');
-  ga('send', 'pageview');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-67803598-1', 'auto');
+    ga('send', 'pageview');
   </script>
 
   <header class="header">
@@ -70,7 +66,7 @@
           <img src="img/laptop.jpg" alt="Felipe in conference with himself">
         </li>
         <li class="header__pictures__item">
-          <img src="img/tetris.jpg" alt="Felipe playing real life tetris">
+          <img src="img/shadow.jpg" alt="Felipe's experimental photography of it's own shadow">
         </li>
       </ul>
     </section>
@@ -93,8 +89,8 @@
   <section id="about" class="about">
     <h2 class="section-title">about</h2>
     <section class="about__main">
-      <p class="about__text">I’m a <a href="https://www.toptal.com/resume/felipe-bernardes">freelancer</a> <strong>Front End Specialist</strong> living in <a href="https://en.wikipedia.org/wiki/Sorocaba">Sorocaba</a>, Brazil. Currently, I work remotely as a Sr Front End Developer at <a href="https://babycenter.com">BabyCenter.com</a>, the biggest parenthood & childhood content website worldwide.</p>
-      <p class="about__text">I enjoy to travel, learn, teach, design user interfaces and code web/mobile apps. I also play guitar and drums, <em>and I suck at both</em>.</p>
+      <p class="about__text">I’m a <strong>Front End Specialist</strong> living in <a href="https://en.wikipedia.org/wiki/Sorocaba">Sorocaba</a>, Brazil. Currently, I work remotely as a Front End Specialist at <a href="https://trychameleon.com">Chameleon</a>, helping companies <strong>engage</strong> and offer <strong>better experiences</strong> to its end users.</p>
+      <p class="about__text">I enjoy <a href="https://unsplash.com/@felipebernardes">photography</a>, travelling, reading, trying out new recipes, teaching programming newcomers, designing user interfaces and building apps. I also play guitar and drums, <em>and I'm awful at both</em>.</p>
       <p class="about__text">What drives my work is to <strong>build a better web for people</strong> — by sharing knowledge through <a href="https://speakerdeck.com/felipebernardes/">talks</a>, <a href="https://medium.com/sorocabacss">organising tech communities</a> and specially by building things that positively impact lives.</p>
     </section>
     <section class="about__passions">
@@ -103,7 +99,7 @@
       <p class="about__passions__text about__passions__text--large">JavaScript + CSS</p>
       <p class="about__passions__text about__passions__text--small">Composing Code/Music/Poetry</p>
       <p class="about__passions__text about__passions__text--medium">remote work! :-)</p>
-      <p class="about__passions__text about__passions__text--small">pixel perfect implementations</p>
+      <p class="about__passions__text about__passions__text--small">pixel-perfect implementations</p>
     </section>
   </section>
 
@@ -113,13 +109,18 @@
       <h3 class="work__section__title">experience</h3>
       <ul class="work__list">
         <li class="work__item">
+          <h4 class="work__item__title"><a href="https://trychameleon.com/">Chameleon</a></h4>
+          <p class="work__item__text">2021 - current</p>
+          <p class="work__item__text">Sr Front End Developer</p>
+        </li>
+        <li class="work__item">
           <h4 class="work__item__title"><a href="https://www.toptal.com/resume/felipe-bernardes">Toptal</a></h4>
-          <p class="work__item__text">2018 - current</p>
+          <p class="work__item__text">2018 - 2021</p>
           <p class="work__item__text">Sr Front End Developer</p>
         </li>
         <li class="work__item">
           <h4 class="work__item__title"><a href="https://www.babycenter.com/">BabyCenter</a></h4>
-          <p class="work__item__text">2018 - current</p>
+          <p class="work__item__text">2018 - 2021</p>
           <p class="work__item__text">Sr Front End Developer</p>
         </li>
         <li class="work__item">
@@ -146,10 +147,10 @@
           <p class="work__item__text">- 1st Place @ <a href="https://www.gs1br.org/hackathon/">GS1 Brazil Hackathon</a> ’16</p>
         </li>
         <li class="work__item">
-          <p class="work__item__text">- Awarded in <a href="https://www.cisco.com/">cisco</a> challenge @ <a href="https://digitalfestival.ch/en/HACK">HackZurich</a> ’16</p>
+          <p class="work__item__text">- Awarded in <a href="https://cisco.com/">cisco</a> challenge @ <a href="https://hackzurich.com/">HackZurich Hackathon</a> ’16</p>
         </li>
         <li class="work__item">
-          <p class="work__item__text">- Member of the top 3% best freelancers @ <a href="https://www.toptal.com/">Toptal</a> network</p>
+          <p class="work__item__text">- Among the top 3% best freelancers @ <a href="https://toptal.com/">Toptal network</a></p>
         </li>
       </ul>
     </section>
@@ -157,7 +158,7 @@
       <h3 class="work__section__title">talks</h3>
       <ul class="work__list">
         <li class="work__item">
-          <p class="work__item__text"><a href="https://events.codemotion.com/conferences/berlin/2019/speaker/5604/">- A Poem Built with CSS Drawings & Animations (Codemotion Berlin '19)</a></p>
+          <p class="work__item__text"><a href="https://speakerdeck.com/felipebernardes/an-animated-poem-built-with-css-drawings-and-animations">- A Poem Built with CSS Drawings & Animations (Codemotion Berlin '19)</a></p>
         </li>
         <li class="work__item">
           <p class="work__item__text"><a href="https://speakerdeck.com/felipebernardes/vr">- Immersive Journalism (Google DevFest London ’18)</a></p>
@@ -169,28 +170,32 @@
     </section>
     <section class="work__section grid-info">
       <h3 class="work__section__title">further info</h3>
-      <ul class="work__list work__list--align-evenly">
-        <li class="work__item">
-          <p class="work__item__text"><a href="/timeline.html">Career Timeline</a></p>
-        </li>
-        <li class="work__item">
-          <p class="work__item__text"><a href="https://www.toptal.com/resume/felipe-bernardes">Toptal</a></p>
-        </li>
+      <ul class="work__list work__list--align-evenly">        
         <li class="work__item">
           <p class="work__item__text"><a href="https://www.linkedin.com/in/bernardesflp/?locale=en_US">LinkedIn</a></p>
         </li>
         <li class="work__item">
+          <p class="work__item__text"><a href="https://felipebernardes.github.io/felipe-bernardes-resume.pdf">Resume (pdf)</a></p>
+        </li>
+        <li class="work__item">
           <p class="work__item__text"><a href="https://github.com/felipebernardes">GitHub</a></p>
+        </li>        
+        <li class="work__item">
+          <p class="work__item__text"><a href="https://codepen.io/felipebernardes/">CodePen</a></p>
         </li>
         <li class="work__item">
           <p class="work__item__text"><a href="https://speakerdeck.com/felipebernardes/">SpeakerDeck</a></p>
         </li>
         <li class="work__item">
-          <p class="work__item__text"><a href="https://codepen.io/felipebernardes/">CodePen</a></p>
+          <p class="work__item__text"><a href="https://www.toptal.com/resume/felipe-bernardes">Toptal</a></p>
         </li>
         <li class="work__item">
-          <p class="work__item__text"><a href="https://felipebernardes.github.io/felipe-bernardes-resume.pdf">Resume (pdf)</a></p>
+          <p class="work__item__text"><a class="nav__link" href="https://unsplash.com/@felipebernardes">photography</a></p>
         </li>
+        <li class="work__item">
+          <p class="work__item__text"><a class="nav__link" href="https://felipebernardes.substack.com/">tldr (blog)</a></p>
+        </li>
+        
       </ul>
     </section>
   </section>
@@ -199,17 +204,17 @@
     <h2 class="section-title grid-title">hey, let's chat!</h2>
     <ul class="contact__list grid-list">
       <li class="contact__item">
-        <a class="contact__link" href="mailto:bernardes.flp@gmail.com">email me</a>
+        <a class="contact__link" href="mailto:bernardes@hey.com">📩 bernardes@hey.com</a>
       </li>
       <li class="contact__item">
-        <a class="contact__link" href="https://twitter.com/felip_bernardes">twitter</a>
+        <a class="contact__link" href="https://calendly.com/felipebernardes/15min">🗓 book a chat with me</a>
       </li>
       <li class="contact__item">
-        <a class="contact__link" href="https://www.linkedin.com/in/bernardesflp/?locale=en_US">linkedIn</a>
+        <a class="contact__link" href="https://www.linkedin.com/in/bernardesflp/?locale=en_US">🔗 LinkedIn</a>
       </li>
     </ul>
     <div class="contact__img-container grid-img">
-      <img src="img/me.jpg" alt="Felipe smiling photo">
+      <img src="img/me.jpg" alt="Smiling Felipe picture">
     </div>
   </section>
 

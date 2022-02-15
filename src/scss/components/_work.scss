@@ -61,7 +61,7 @@
       @media (min-width: $tablet-landscape-width) {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 150px 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
         .work__item {
           margin: .5rem 0;

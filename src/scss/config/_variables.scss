@@ -5,27 +5,41 @@ $white: #fafafa;
 $purple-main: #511450;
 $purple-alt: #7543E4;
 $purple-light: #F2EFF6;
+$purple-footer-gradient-start: #60288f;
+$purple-footer-gradient-end: #723fd9;
 
 $green-main: adjust-hue($purple-main, 230deg);
 $green-alt: adjust-hue($purple-alt, 230deg);
 $green-light: adjust-hue($purple-light, 230deg);
+$green-footer-gradient-start: adjust-hue($purple-footer-gradient-start, 230deg);
+$green-footer-gradient-end: adjust-hue($purple-footer-gradient-end, 230deg);
 
 $teal-main: adjust-hue($purple-main, 270deg);
 $teal-alt: adjust-hue($purple-alt, 270deg);
 $teal-light: adjust-hue($purple-light, 270deg);
+$teal-footer-gradient-start: adjust-hue($purple-footer-gradient-start, 270deg);
+$teal-footer-gradient-end: adjust-hue($purple-footer-gradient-end, 270deg);
 
 $blue-main: adjust-hue($purple-main, 290deg);
 $blue-alt: adjust-hue($purple-alt, 290deg);
 $blue-light: adjust-hue($purple-light, 290deg);
+$blue-footer-gradient-start: adjust-hue($purple-footer-gradient-start, 290deg);
+$blue-footer-gradient-end: adjust-hue($purple-footer-gradient-end, 290deg);
 
-$pink-main: adjust-hue($purple-main, 40deg);
+$pink-main: adjust-hue($purple-main, 70deg);
 $pink-alt: adjust-hue($purple-alt, 80deg);
 $pink-light: adjust-hue($purple-light, 80deg);
+$pink-footer-gradient-start: adjust-hue($purple-footer-gradient-start, 80deg);
+$pink-footer-gradient-end: adjust-hue($purple-footer-gradient-end, 80deg);
 
-$color-main: $purple-main;
-$color-alt: $purple-alt;
-$color-light: $purple-light;
+
+$color-main: $teal-main;
+$color-alt: $teal-alt;
+$color-light: $teal-light;
+$color-footer-gradient-start: $teal-footer-gradient-start;
+$color-footer-gradient-end: $teal-footer-gradient-end;
 $gradient: linear-gradient(to bottom right, $color-main, $color-alt);
+$footer-gradient: linear-gradient(to right, $color-footer-gradient-start, $color-footer-gradient-end);
 
 $tablet-portrait-width: 768px;
 $tablet-landscape-width: 1024px;

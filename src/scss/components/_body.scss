@@ -38,7 +38,7 @@ html {
     top: 0;
     left: 0;
     z-index: -4;
-    border: $frame-border-width/2 dashed $color-alt;
+    border: calc($frame-border-width / 2) dashed $color-alt;
   }
 }
 
