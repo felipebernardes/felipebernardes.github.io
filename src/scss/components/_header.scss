@@ -17,7 +17,10 @@
   }
 
   @media (min-width: $laptop-width) {
+    display: grid;
     padding: $padding-small $padding-medium;
+    grid-template-areas: "hello . . pictures"
+                         "navigation . . .";
   }
 
   @media (min-width: $fullhd-width) {
@@ -25,6 +28,7 @@
   }
 
   &__hello {
+    grid-area: hello;
     margin: 10vh auto 0 auto;
 
     @media (min-width: $tablet-portrait-width) {
@@ -39,6 +43,7 @@
     font-size: 1.4rem;
     line-height: 140%;
     font-weight: normal;
+    grid-area: title;
 
     @media (min-width: $tablet-portrait-width) {
       font-size: 2rem;
@@ -76,6 +81,7 @@
   }
 
   &__pictures {
+    grid-area: pictures;
     width: 200px;
     height: 200px;
     margin: 5vmin auto auto auto;
@@ -84,12 +90,14 @@
 
     @media (min-width: $tablet-portrait-width) {
       margin: 10vh auto 0 auto;
-      //left: 10vw;
     }
 
     @media (min-width: $laptop-width) {
       width: 250px;
       height: 250px;
+      margin: 10vh 0 0 0;
+      left: 0;
+      right: 0;
     }
 
     &__item {
@@ -200,6 +208,7 @@
 }
 
 .nav {
+  grid-area: navigation;
   margin: 0 auto $padding-small auto;
 
   @media (min-width: $tablet-portrait-width) {
