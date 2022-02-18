@@ -17,6 +17,7 @@ html {
     height: 100%;
     left: 0;
     top: 0;
+    z-index: -1;
     
     &:before {
       content: '';
@@ -44,7 +45,6 @@ html {
       left: 0;
       z-index: -4;
       border: calc($frame-border-width / 2) dashed $color-alt;
-      backdrop-filter: blur(5px);
     }
   }
   
