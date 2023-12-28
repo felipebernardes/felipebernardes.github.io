@@ -1,7 +1,7 @@
 {
   "name": "felipebernardes.github.io",
-  "version": "3.1.0",
-  "description": "Felipe Bernarde's Website",
+  "version": "4.0.0",
+  "description": "Felipe Bernardes' Website",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "rm -rf dist && parcel build src/index.html --no-content-hash",
