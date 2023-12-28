@@ -2,6 +2,13 @@ $black: #1b1b1b;
 $gray: #555555;
 $white: #fafafa;
 
+$off-black: #0b0b0b;
+$off-white: #F4F0E0;
+
+$yellow-main: #fcba03;
+$yellow-alt: #cfd443;
+$yellow-light: #f4eacf;
+
 $purple-main: #511450;
 $purple-alt: #7543E4;
 $purple-light: #F2EFF6;
@@ -31,7 +38,6 @@ $pink-alt: adjust-hue($purple-alt, 80deg);
 $pink-light: adjust-hue($purple-light, 80deg);
 $pink-footer-gradient-start: adjust-hue($purple-footer-gradient-start, 80deg);
 $pink-footer-gradient-end: adjust-hue($purple-footer-gradient-end, 80deg);
-
 
 $color-main: $teal-main;
 $color-alt: $teal-alt;
